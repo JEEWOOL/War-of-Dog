@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Bomb : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject effect;
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        effect.SetActive(true);
+        Destroy(this.gameObject, 3f);
     }
 }

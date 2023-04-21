@@ -1265,7 +1265,7 @@ GameObject:
   - component: {fileID: 3772708501660362485}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1353,6 +1353,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMoveSpeed: 5
+  maxHealth: 30
+  curHealth: 30
   gravity: -10
   jumpPower: 3
   isJumping: 0
@@ -2577,6 +2579,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b96201848d117da4ca7dc3ade4bd59de, type: 3}
       propertyPath: m_Name
       value: SwordPolyart
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b96201848d117da4ca7dc3ade4bd59de, type: 3}
+      propertyPath: m_TagString
+      value: Sword
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b96201848d117da4ca7dc3ade4bd59de, type: 3}
       propertyPath: m_RootOrder

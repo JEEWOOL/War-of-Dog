@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    // 플레이어 이동
+    // 플레이어 이동 / 체력
     public float playerMoveSpeed = 5;
     float hAxis;
     float vAxis;
-    bool rDown;    
+    bool rDown;
+    public int maxHealth = 30;
+    public int curHealth = 30;
 
     // 플레이어 점프
     public float gravity = -10;
@@ -21,8 +24,9 @@ public class PlayerMove : MonoBehaviour
     float attackDelay;
     bool isAttackReady = true;
 
-    // 플레이어 스턴
-    bool stern = false;
+    // 플레이어 스턴 / 사망
+    public bool stern = false;
+    public bool isDie = false;
 
     // 플레이어 섬광
     public int hasBomb = 3;
@@ -47,7 +51,31 @@ public class PlayerMove : MonoBehaviour
         Move();
         Attack();
         ThrowBomb();
-    }    
+        Die();
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Sword")
+        {
+            curHealth -= 10;
+            anim.SetTrigger("damage");
+        }
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Bomb")
+        {
+            StartCoroutine(BombAttack());
+        }
+    }
+    IEnumerator BombAttack()
+    {
+        stern = true;
+        anim.SetTrigger("Hit");
+        yield return new WaitForSeconds(2f);
+        stern = false;
+    }
 
     void GetInput()
     {
@@ -76,7 +104,7 @@ public class PlayerMove : MonoBehaviour
             }
         }
 
-        if (Input.GetButtonDown("Jump") && !isJumping)
+        if (Input.GetButtonDown("Jump") && !isJumping && stern == false && isDie == false)
         {
             yVelocity = jumpPower;
             isJumping = true;
@@ -85,7 +113,7 @@ public class PlayerMove : MonoBehaviour
         yVelocity += gravity * Time.deltaTime;
         dir.y = yVelocity;
 
-        if(!isAttackReady || stern == true)
+        if(!isAttackReady || stern == true || isDie == true)
         {
             dir = Vector3.zero;
         }
@@ -97,7 +125,7 @@ public class PlayerMove : MonoBehaviour
     {
         attackDelay += Time.deltaTime;
         isAttackReady = weapon.rate < attackDelay;
-        if (aDown && isAttackReady && stern == false)
+        if (aDown && isAttackReady && stern == false && isDie == false)
         {
             weapon.Use();
             anim.SetTrigger("Attack");
@@ -112,7 +140,7 @@ public class PlayerMove : MonoBehaviour
             return;
         }
 
-        if (bDown /*&& !isAttackReady*/)
+        if (bDown && stern == false && isDie == false)
         {
             GameObject instantBomb = Instantiate(grenadeObj, firePos.transform.position,
                 firePos.transform.rotation);
@@ -120,6 +148,16 @@ public class PlayerMove : MonoBehaviour
             rigidBomb.AddForce(firePos.transform.forward * 13f, ForceMode.Impulse);
 
             hasBomb--;
+        }
+    }
+
+    void Die()
+    {
+        if(curHealth <= 0)
+        {
+            isDie = true;
+            anim.SetBool("Die", true);
+            Destroy(this.gameObject, 3f);
         }
     }
 }
