@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Sword
   - Bomb
+  - Shield
+  - FxTemporaire
+  - Ctarget
   layers:
   - Default
   - TransparentFX

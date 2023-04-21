@@ -8,6 +8,7 @@ public class CamFollow : MonoBehaviour
 
     private void Update()
     {
-        transform.position = target.position;
+        //transform.position = target.position;
+        transform.position = GameObject.Find("CamPosition").transform.position;
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -28,11 +29,22 @@ public class PlayerMove : MonoBehaviour
     public bool stern = false;
     public bool isDie = false;
 
-    // 플레이어 섬광
-    public int hasBomb = 3;
+    // 플레이어 섬광    
     bool bDown;
     public GameObject grenadeObj;
     public GameObject firePos;
+
+    // 플레이어 방어
+    public GameObject effect;
+    public BoxCollider scol;
+    bool dDown;
+
+    // 플레이어 스킬 쿨타임
+    public Image bomb_CoolTime;
+    //float bombdelay = 3f;
+    bool bomb = false;
+
+    public Image shield_CoolTime;
 
     CharacterController cc;
     Animator anim;
@@ -42,7 +54,7 @@ public class PlayerMove : MonoBehaviour
     {
         cc = gameObject.GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-        weapon = GetComponentInChildren<Weapon>();
+        weapon = GetComponentInChildren<Weapon>();        
     }
 
     private void Update()
@@ -51,6 +63,7 @@ public class PlayerMove : MonoBehaviour
         Move();
         Attack();
         ThrowBomb();
+        Defend();
         Die();
     }
 
@@ -64,7 +77,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Bomb")
+        if (collision.gameObject.tag == "Bomb" || collision.gameObject.tag == "Shield")
         {
             StartCoroutine(BombAttack());
         }
@@ -84,6 +97,7 @@ public class PlayerMove : MonoBehaviour
         rDown = Input.GetKey(KeyCode.LeftShift);
         aDown = Input.GetMouseButtonDown(0);
         bDown = Input.GetMouseButtonDown(1);
+        dDown = Input.GetKeyDown(KeyCode.E);
     }
 
     void Move()
@@ -135,21 +149,16 @@ public class PlayerMove : MonoBehaviour
 
     void ThrowBomb()
     {
-        if (hasBomb == 0)
+        if (bDown && stern == false && isDie == false && bomb == false)
         {
-            return;
-        }
-
-        if (bDown && stern == false && isDie == false)
-        {
+            bomb = true;
+            bomb_CoolTime.enabled = true;
             GameObject instantBomb = Instantiate(grenadeObj, firePos.transform.position,
                 firePos.transform.rotation);
             Rigidbody rigidBomb = instantBomb.GetComponent<Rigidbody>();
             rigidBomb.AddForce(firePos.transform.forward * 13f, ForceMode.Impulse);
-
-            hasBomb--;
-        }
-    }
+        }        
+    }    
 
     void Die()
     {
@@ -159,5 +168,23 @@ public class PlayerMove : MonoBehaviour
             anim.SetBool("Die", true);
             Destroy(this.gameObject, 3f);
         }
+    }
+
+    void Defend()
+    {
+        if (dDown && stern == false && isDie == false)
+        {
+            anim.SetTrigger("Guard");
+            StopCoroutine(DefendS());
+            StartCoroutine(DefendS());
+        }
+    }
+    IEnumerator DefendS()
+    {
+        effect.SetActive(true);
+        scol.enabled = true;
+        yield return new WaitForSeconds(0.5f);
+        effect.SetActive(false);
+        scol.enabled = false;
     }
 }
