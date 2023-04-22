@@ -1262,8 +1262,8 @@ GameObject:
   - component: {fileID: 2066896392038131574}
   - component: {fileID: 2066896392029128874}
   - component: {fileID: 7253852410725435522}
-  - component: {fileID: 3520955664000186001}
   - component: {fileID: 3772708501660362485}
+  - component: {fileID: 2688339450872606025}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1328,19 +1328,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.65, z: 0}
---- !u!114 &3520955664000186001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066896392038628118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c9edbbdaed9c6744bb993d2fb983e51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotSpeed: 200
 --- !u!114 &3772708501660362485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1361,11 +1348,28 @@ MonoBehaviour:
   isJumping: 0
   stern: 0
   isDie: 0
-  hasBomb: 3
   grenadeObj: {fileID: 1263194922129702, guid: 9542e0a3f73ed4c4caa252dddf2fcdc4, type: 3}
   firePos: {fileID: 4251733429643306837}
   effect: {fileID: 5985439713399250481}
   scol: {fileID: 266242652424109143}
+  bomb_CoolTime: {fileID: 0}
+  bombCoolTime: {fileID: 0}
+  shield_CoolTime: {fileID: 0}
+  shieldCoolTime: {fileID: 0}
+  hp_Slider: {fileID: 0}
+--- !u!114 &2688339450872606025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066896392038628118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c9edbbdaed9c6744bb993d2fb983e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 200
 --- !u!1 &2066896392038628120
 GameObject:
   m_ObjectHideFlags: 0

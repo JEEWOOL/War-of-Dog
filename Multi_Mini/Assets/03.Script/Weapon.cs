@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour
         Range
     }
     public Type type;
-    public int damage;
+    public float damage;
     public float rate;
     public BoxCollider meleeArea;
 

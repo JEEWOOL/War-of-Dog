@@ -11,8 +11,8 @@ public class PlayerMove : MonoBehaviour
     float hAxis;
     float vAxis;
     bool rDown;
-    public int maxHealth = 30;
-    public int curHealth = 30;
+    public float maxHealth = 30;
+    public float curHealth = 30;
 
     // 플레이어 점프
     public float gravity = -10;
@@ -41,20 +41,55 @@ public class PlayerMove : MonoBehaviour
 
     // 플레이어 스킬 쿨타임
     public Image bomb_CoolTime;
-    //float bombdelay = 3f;
-    bool bomb = false;
+    bool bomb;
+    public GameObject bombCoolTime;
+    //float bombTime = 3f;
 
     public Image shield_CoolTime;
+    bool shield;
+    public GameObject shieldCoolTime;
+    //float shieldTime = 5f;
+
+    // 플레이어 체력
+    public Slider hp_Slider;
 
     CharacterController cc;
     Animator anim;
     Weapon weapon;
+    GameObject gameManager;
 
     private void Awake()
     {
+        gameManager = GameObject.Find("GameManager");
+        bomb_CoolTime = gameManager.GetComponent<GameManager>().bomb_CoolTime;
+        bombCoolTime = gameManager.GetComponent<GameManager>().bombCoolTime;
+        shield_CoolTime = gameManager.GetComponent<GameManager>().shield_CoolTime;
+        shieldCoolTime = gameManager.GetComponent<GameManager>().shieldCoolTime;
+        hp_Slider = gameManager.GetComponent<GameManager>().hp_Slider;
+        //bombCoolTime = GameManager.Instance.bombCoolTime;
+        //shield_CoolTime = GameManager.Instance.shield_CoolTime;
+        //shieldCoolTime = GameManager.Instance.shieldCoolTime;
+        //hp_Slider = GameManager.Instance.hp_Slider;
+
         cc = gameObject.GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         weapon = GetComponentInChildren<Weapon>();        
+    }
+
+    private void Start()
+    {
+        hp_Slider.value = (float)curHealth / (float)maxHealth;        
+        bombCoolTime.SetActive(false);
+        shieldCoolTime.SetActive(false);
+        //bombCoolTime.enabled = false;
+        //shieldCoolTime.enabled = false;
+        bomb_CoolTime.fillAmount = 1;
+        bomb = false;
+        bomb_CoolTime.enabled = false;
+        shield_CoolTime.fillAmount = 1;
+        shield = false;
+        shield_CoolTime.enabled = false;
+        effect.SetActive(false);
     }
 
     private void Update()
@@ -62,16 +97,18 @@ public class PlayerMove : MonoBehaviour
         GetInput();
         Move();
         Attack();
+        Die();
+        HandleHp();
         ThrowBomb();
         Defend();
-        Die();
+        
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Sword")
         {
-            curHealth -= 10;
+            curHealth -= 10f;
             anim.SetTrigger("damage");
         }
     }
@@ -88,6 +125,11 @@ public class PlayerMove : MonoBehaviour
         anim.SetTrigger("Hit");
         yield return new WaitForSeconds(2f);
         stern = false;
+    }
+
+    void HandleHp()
+    {
+        hp_Slider.value = (float)curHealth / (float)maxHealth;
     }
 
     void GetInput()
@@ -153,12 +195,25 @@ public class PlayerMove : MonoBehaviour
         {
             bomb = true;
             bomb_CoolTime.enabled = true;
+            bomb_CoolTime.fillAmount = 1;
+            StartCoroutine(LightCoolTime());
             GameObject instantBomb = Instantiate(grenadeObj, firePos.transform.position,
                 firePos.transform.rotation);
             Rigidbody rigidBomb = instantBomb.GetComponent<Rigidbody>();
             rigidBomb.AddForce(firePos.transform.forward * 13f, ForceMode.Impulse);
         }        
-    }    
+    }
+    IEnumerator LightCoolTime()
+    {
+        while(bomb_CoolTime.fillAmount > 0)
+        {
+            bomb_CoolTime.fillAmount -= 1 * Time.smoothDeltaTime / 3f;
+            yield return null;
+            bomb = true;
+        }
+        bomb = false;
+        bomb_CoolTime.enabled = false;
+    }
 
     void Die()
     {
@@ -172,19 +227,56 @@ public class PlayerMove : MonoBehaviour
 
     void Defend()
     {
-        if (dDown && stern == false && isDie == false)
+        if (dDown && stern == false && isDie == false && shield == false)
         {
+            //shieldCoolTime.enabled = true;
+            shieldCoolTime.SetActive(true);
+            shield = true;
+            shield_CoolTime.enabled = true;
+            shield_CoolTime.fillAmount = 1;
+            StartCoroutine(DefendCoolTime());
+            UseS();
+            scol.enabled = true;
             anim.SetTrigger("Guard");
-            StopCoroutine(DefendS());
-            StartCoroutine(DefendS());
-        }
+            //StartCoroutine(DCoolTimeText());
+        }        
     }
-    IEnumerator DefendS()
+    IEnumerator DefendCoolTime()
     {
-        effect.SetActive(true);
+        while (shield_CoolTime.fillAmount > 0)
+        {            
+            shield_CoolTime.fillAmount -= 1 * Time.smoothDeltaTime / 5f;
+            yield return null;
+            shield = true;            
+        }
+        shield = false;
+        shield_CoolTime.enabled = false;        
+    }
+
+    void UseS()
+    {
+        StartCoroutine(ShieldTime());        
+    }
+    IEnumerator ShieldTime()
+    {
         scol.enabled = true;
+        effect.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         effect.SetActive(false);
         scol.enabled = false;
     }
+    //IEnumerator DCoolTimeText()
+    //{
+    //    while (shieldTime > 0)
+    //    {
+    //        yield return new WaitForSeconds(1.0f);
+    //        shieldTime -= 1.0f;
+    //        //shieldCoolTime.text = "" + shieldTime;
+    //        shieldCoolTime.GetComponent<Text>().text = "" + shieldTime;
+    //    }
+
+    //    //shieldCoolTime.enabled = false;        
+    //    shieldCoolTime.SetActive(false);
+    //    yield break;
+    //}
 }
