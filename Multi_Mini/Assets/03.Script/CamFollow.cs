@@ -10,5 +10,6 @@ public class CamFollow : MonoBehaviour
     {
         //transform.position = target.position;
         transform.position = GameObject.Find("CamPosition").transform.position;
+        transform.rotation = GameObject.Find("CamPosition").transform.rotation;
     }
 }
