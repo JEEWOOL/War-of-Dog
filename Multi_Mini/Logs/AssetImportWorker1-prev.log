@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.19f1 (c9714fde33b6) revision 13201743'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'ko' Physical Memory: 16233 MB
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ko' Physical Memory: 32542 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-E:\AIAclassdata\Unity\Unity Editor\2021.3.19f1\Editor\Unity.exe
+F:\AIAclassdata\Unity\Unity Editor\2021.3.19f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker1
 -projectPath
-E:/AIAclassdata/Unity/Unity Project/Multi_Mini
+F:/AIAclassdata/Unity/Unity Project/Multi_Mini
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-58471
-Successfully changed project path to: E:/AIAclassdata/Unity/Unity Project/Multi_Mini
-E:/AIAclassdata/Unity/Unity Project/Multi_Mini
+51862
+Successfully changed project path to: F:/AIAclassdata/Unity/Unity Project/Multi_Mini
+F:/AIAclassdata/Unity/Unity Project/Multi_Mini
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,116 +47,290 @@ E:/AIAclassdata/Unity/Unity Project/Multi_Mini
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21040] Host "[IP] 192.168.1.2 [Port] 0 [Flags] 2 [Guid] 4049962131 [EditorId] 4049962131 [Version] 1048832 [Id] WindowsEditor(7,LeeJeeWoo_Com) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16836] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 3064290192 [EditorId] 3064290192 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RA0QDOO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [21040] Host "[IP] 192.168.1.2 [Port] 0 [Flags] 2 [Guid] 4049962131 [EditorId] 4049962131 [Version] 1048832 [Id] WindowsEditor(7,LeeJeeWoo_Com) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16836] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 3064290192 [EditorId] 3064290192 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RA0QDOO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 158.94 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 99.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.19f1 (c9714fde33b6)
-[Subsystems] Discovering subsystems at path E:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path E:/AIAclassdata/Unity/Unity Project/Multi_Mini/Assets
+[Subsystems] Discovering subsystems at path F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/AIAclassdata/Unity/Unity Project/Multi_Mini/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f11)
+    Renderer: NVIDIA GeForce RTX 2080 (ID=0x1e82)
     Vendor:   NVIDIA
-    VRAM:     5968 MB
-    Driver:   31.0.15.3141
+    VRAM:     8011 MB
+    Driver:   31.0.15.1766
 Initialize mono
-Mono path[0] = 'E:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/Managed'
-Mono path[1] = 'E:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'E:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Mono path[0] = 'F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: E:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: E:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: E:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.037275 seconds.
+Register platform support module: F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.059529 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 322 ms
+Android Extension - Scanning For ADB Devices 214 ms
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 100.23 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 87.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.331 seconds
+- Completed reload, in  1.122 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1331ms)
-		BeginReloadAssembly (219ms)
+	ReloadAssembly (1122ms)
+		BeginReloadAssembly (200ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (928ms)
-			LoadAssemblies (216ms)
+		EndReloadAssembly (743ms)
+			LoadAssemblies (195ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (156ms)
+			SetupTypeCache (137ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (673ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (517ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (421ms)
+				InitializePlatformSupportModulesInManaged (302ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (100ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (104ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
+				RefreshPlugins (87ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (85ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005462 seconds.
+Registered in 0.004755 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.735 seconds
+- Completed reload, in  1.364 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1736ms)
-		BeginReloadAssembly (225ms)
+	ReloadAssembly (1365ms)
+		BeginReloadAssembly (237ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (17ms)
+		EndReloadAssembly (997ms)
+			LoadAssemblies (217ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (292ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (515ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (35ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (156ms)
+				ProcessInitializeOnLoadAttributes (268ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (33ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3312 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (113.7 KB). Loaded Objects now: 3777.
+Memory consumption went from 125.4 MB to 125.3 MB.
+Total: 2.804500 ms (FindLiveObjects: 0.266100 ms CreateObjectMapping: 0.190600 ms MarkObjects: 2.239500 ms  DeleteObjects: 0.107200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004311 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.272 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1273ms)
+		BeginReloadAssembly (268ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (1354ms)
-			LoadAssemblies (216ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (887ms)
+			LoadAssemblies (212ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (530ms)
+			SetupTypeCache (293ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (70ms)
-			SetupLoadedEditorAssemblies (577ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (408ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (32ms)
+				InitializePlatformSupportModulesInManaged (42ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (193ms)
-				ProcessInitializeOnLoadAttributes (308ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (19ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (17ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.72 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3312 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 30 unused Assets / (113.7 KB). Loaded Objects now: 3777.
-Memory consumption went from 125.2 MB to 125.1 MB.
-Total: 3.579600 ms (FindLiveObjects: 0.357400 ms CreateObjectMapping: 0.273900 ms MarkObjects: 2.810800 ms  DeleteObjects: 0.136100 ms)
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (80.2 KB). Loaded Objects now: 3781.
+Memory consumption went from 124.3 MB to 124.2 MB.
+Total: 2.694400 ms (FindLiveObjects: 0.242800 ms CreateObjectMapping: 0.310800 ms MarkObjects: 2.046600 ms  DeleteObjects: 0.093200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003786 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.316 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1317ms)
+		BeginReloadAssembly (262ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (935ms)
+			LoadAssemblies (231ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (291ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (459ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (43ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (145ms)
+				ProcessInitializeOnLoadAttributes (198ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (51ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (80.2 KB). Loaded Objects now: 3785.
+Memory consumption went from 124.0 MB to 123.9 MB.
+Total: 2.299000 ms (FindLiveObjects: 0.230100 ms CreateObjectMapping: 0.140400 ms MarkObjects: 1.852200 ms  DeleteObjects: 0.075300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004738 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.308 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1309ms)
+		BeginReloadAssembly (265ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (918ms)
+			LoadAssemblies (235ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (295ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (421ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (44ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (120ms)
+				ProcessInitializeOnLoadAttributes (213ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (80.2 KB). Loaded Objects now: 3789.
+Memory consumption went from 124.0 MB to 123.9 MB.
+Total: 3.508600 ms (FindLiveObjects: 0.282800 ms CreateObjectMapping: 0.386600 ms MarkObjects: 2.696100 ms  DeleteObjects: 0.141500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -170,57 +344,57 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 237193.504692 seconds.
-  path: Assets/03.Script/PhotonManager.cs
-  artifactKey: Guid(96b04ef1d20113f4dbc70a7f4800ddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/03.Script/PhotonManager.cs using Guid(96b04ef1d20113f4dbc70a7f4800ddc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2fe27ec1a6a5335f88ab8d67a9bdb0') in 0.054747 seconds 
+  Time since last request: 953095.051054 seconds.
+  path: Assets/Resources/Player.prefab
+  artifactKey: Guid(54cfe3a9dc07a9d4783b843c1dabf2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Player.prefab using Guid(54cfe3a9dc07a9d4783b843c1dabf2cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '363e4a70f6b98ba56924a6a6f7a6e2c9') in 0.401159 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005876 seconds.
+Registered in 0.004143 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.353 seconds
+- Completed reload, in  1.350 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1354ms)
-		BeginReloadAssembly (311ms)
+	ReloadAssembly (1350ms)
+		BeginReloadAssembly (258ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (914ms)
-			LoadAssemblies (253ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (969ms)
+			LoadAssemblies (228ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (321ms)
+			SetupTypeCache (307ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (409ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (465ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (47ms)
+				InitializePlatformSupportModulesInManaged (44ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (129ms)
-				ProcessInitializeOnLoadAttributes (186ms)
-				ProcessInitializeOnLoadMethodAttributes (19ms)
-				AfterProcessingInitializeOnLoad (27ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (220ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (32ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.04 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (80.2 KB). Loaded Objects now: 3781.
-Memory consumption went from 123.7 MB to 123.7 MB.
-Total: 2.693700 ms (FindLiveObjects: 0.240700 ms CreateObjectMapping: 0.203300 ms MarkObjects: 2.173600 ms  DeleteObjects: 0.075100 ms)
+Unloading 22 unused Assets / (80.2 KB). Loaded Objects now: 3802.
+Memory consumption went from 141.0 MB to 140.9 MB.
+Total: 2.988600 ms (FindLiveObjects: 0.271100 ms CreateObjectMapping: 0.239000 ms MarkObjects: 2.395800 ms  DeleteObjects: 0.081400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -235,50 +409,108 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007321 seconds.
+Registered in 0.003789 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.617 seconds
+- Completed reload, in  1.415 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1618ms)
-		BeginReloadAssembly (300ms)
+	ReloadAssembly (1415ms)
+		BeginReloadAssembly (260ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (1033ms)
+			LoadAssemblies (242ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (354ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (470ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (52ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (147ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (30ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (80.3 KB). Loaded Objects now: 3806.
+Memory consumption went from 141.0 MB to 140.9 MB.
+Total: 2.628800 ms (FindLiveObjects: 0.231500 ms CreateObjectMapping: 0.134800 ms MarkObjects: 2.172600 ms  DeleteObjects: 0.089000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004467 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.306 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1307ms)
+		BeginReloadAssembly (252ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (1175ms)
-			LoadAssemblies (246ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (936ms)
+			LoadAssemblies (219ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (364ms)
+			SetupTypeCache (281ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (569ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (460ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (57ms)
+				InitializePlatformSupportModulesInManaged (48ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (180ms)
-				ProcessInitializeOnLoadAttributes (268ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (36ms)
+				BeforeProcessingInitializeOnLoad (146ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (31ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (80.2 KB). Loaded Objects now: 3785.
-Memory consumption went from 123.8 MB to 123.7 MB.
-Total: 6.705300 ms (FindLiveObjects: 0.407100 ms CreateObjectMapping: 0.358000 ms MarkObjects: 5.800400 ms  DeleteObjects: 0.138300 ms)
+Unloading 22 unused Assets / (80.2 KB). Loaded Objects now: 3810.
+Memory consumption went from 141.0 MB to 140.9 MB.
+Total: 2.796600 ms (FindLiveObjects: 0.255600 ms CreateObjectMapping: 0.175900 ms MarkObjects: 2.284900 ms  DeleteObjects: 0.079600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -293,50 +525,1000 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006336 seconds.
+Registered in 0.006063 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.357 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1358ms)
+		BeginReloadAssembly (261ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (961ms)
+			LoadAssemblies (225ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (300ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (469ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (53ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (217ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (27ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (80.3 KB). Loaded Objects now: 3814.
+Memory consumption went from 141.0 MB to 140.9 MB.
+Total: 2.556500 ms (FindLiveObjects: 0.275700 ms CreateObjectMapping: 0.226900 ms MarkObjects: 1.974400 ms  DeleteObjects: 0.078500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004613 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.289 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1290ms)
+		BeginReloadAssembly (262ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (907ms)
+			LoadAssemblies (220ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (279ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (431ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (45ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (80.3 KB). Loaded Objects now: 3818.
+Memory consumption went from 141.0 MB to 141.0 MB.
+Total: 2.825900 ms (FindLiveObjects: 0.268300 ms CreateObjectMapping: 0.188100 ms MarkObjects: 2.286800 ms  DeleteObjects: 0.081400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2042.639752 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Dock_01.fbx
+  artifactKey: Guid(63e678f1eb5f48b43a49a863d6dc905d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Dock_01.fbx using Guid(63e678f1eb5f48b43a49a863d6dc905d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6acab218836044d33ea38e5403c20f38') in 0.136408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Grass_Square_01_Convex.asset
+  artifactKey: Guid(2a4ea9ebde46de14a86f2cd93b632695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Grass_Square_01_Convex.asset using Guid(2a4ea9ebde46de14a86f2cd93b632695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85545b48866a77f8ac284c17599a79cb') in 0.029927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Grass_Square_01.fbx
+  artifactKey: Guid(e330da6f6bba5a64697a4388734c932e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Grass_Square_01.fbx using Guid(e330da6f6bba5a64697a4388734c932e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '776ed2c57faf9cc860f2e01580e2ee2f') in 0.025512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Port_Boat_Tie_01_Convex.asset
+  artifactKey: Guid(d18434d0e2ee28945b23347dda903634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Port_Boat_Tie_01_Convex.asset using Guid(d18434d0e2ee28945b23347dda903634) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c341837158d8213ad443b2c7f6e5cad6') in 0.022124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Dock_01_Convex.asset
+  artifactKey: Guid(81416431d02c5bb469cac4223ced4734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Dock_01_Convex.asset using Guid(81416431d02c5bb469cac4223ced4734) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '382fe2712b2291c97376f74b9eb062c3') in 0.019566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Port_Concrete_Slab_01.fbx
+  artifactKey: Guid(f209fcf9d78e09246ae32e5e4e231e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Port_Concrete_Slab_01.fbx using Guid(f209fcf9d78e09246ae32e5e4e231e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c335809354c2f95f59da515ea21b0f20') in 0.025105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Dock_Poles_01_Convex.asset
+  artifactKey: Guid(3150ffecc95cf3949b0b169b924fb483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Dock_Poles_01_Convex.asset using Guid(3150ffecc95cf3949b0b169b924fb483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e9463542231eb6f1bc0fc476ee0f64') in 0.020644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Grass_Circle_02_Convex.asset
+  artifactKey: Guid(e9ea10ff9acdd6a4f965cc9127fa007e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Grass_Circle_02_Convex.asset using Guid(e9ea10ff9acdd6a4f965cc9127fa007e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8887234a8d7cc5ac5a23802ffa979157') in 0.021452 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Port_Boat_Tie_01.fbx
+  artifactKey: Guid(c717a32e320fb1e44940217baba11876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Port_Boat_Tie_01.fbx using Guid(c717a32e320fb1e44940217baba11876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b4922d2ca55fba58b5b99a3d774cdef') in 0.021950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 106.709763 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Port_Wall_02.fbx
+  artifactKey: Guid(ad0b10a25194cca449aa8e0b3e6592da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Port_Wall_02.fbx using Guid(ad0b10a25194cca449aa8e0b3e6592da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aebc4a89eeb6d5a614a66245d745464') in 0.064202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Port_Wall_02_Convex.asset
+  artifactKey: Guid(c6f8e1d6e8530eb49b91727809bc64d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Port_Wall_02_Convex.asset using Guid(c6f8e1d6e8530eb49b91727809bc64d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '156fb2e9b3751ed88ca4025a23c62c91') in 0.021262 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003617 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.213 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1214ms)
+		BeginReloadAssembly (222ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (888ms)
+			LoadAssemblies (186ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (270ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (425ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (39ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (17ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.05 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (80.3 KB). Loaded Objects now: 3826.
+Memory consumption went from 141.3 MB to 141.2 MB.
+Total: 2.727100 ms (FindLiveObjects: 0.271500 ms CreateObjectMapping: 0.195900 ms MarkObjects: 2.175300 ms  DeleteObjects: 0.083300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004230 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.238 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1239ms)
+		BeginReloadAssembly (287ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (845ms)
+			LoadAssemblies (262ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (274ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (386ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (38ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (129ms)
+				ProcessInitializeOnLoadAttributes (182ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (80.1 KB). Loaded Objects now: 3830.
+Memory consumption went from 141.3 MB to 141.2 MB.
+Total: 2.556200 ms (FindLiveObjects: 0.230200 ms CreateObjectMapping: 0.144700 ms MarkObjects: 2.091300 ms  DeleteObjects: 0.089000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 373.394581 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Materials/UnitTextureYellow12x.mat
+  artifactKey: Guid(ceba02e8dfaf34474b36fe43b51b69db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Materials/UnitTextureYellow12x.mat using Guid(ceba02e8dfaf34474b36fe43b51b69db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19fc359f754c036d38a158af43f16418') in 0.158845 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Materials/WhiteUnlit.mat
+  artifactKey: Guid(073b1ee561def20429e655b5c8893ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Materials/WhiteUnlit.mat using Guid(073b1ee561def20429e655b5c8893ad4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f251c48e22e78a981d68ebb1d7b57bab') in 0.020967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/white.mat
+  artifactKey: Guid(db16216c3f288ea4eb77dfefecada55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/white.mat using Guid(db16216c3f288ea4eb77dfefecada55a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b80d85e6981968210ddefb01d1048621') in 0.042419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/wall.mat
+  artifactKey: Guid(b5e9e0cb388c83440adfb6c0c023ee8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/wall.mat using Guid(b5e9e0cb388c83440adfb6c0c023ee8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad45ce1f057db4777a68deaeaf71f778') in 0.030523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonBattleRoyale/Models/Materials/Weapon_Skins_Master_07.mat
+  artifactKey: Guid(bbc317ea0139580439ffe00e4ec54135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/Materials/Weapon_Skins_Master_07.mat using Guid(bbc317ea0139580439ffe00e4ec54135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d335b620fd7657b0c9742817878fad') in 0.024593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.794702 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/UnitCircleTexture.mat
+  artifactKey: Guid(80114bc117609cd4e9c988f8692e7a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/UnitCircleTexture.mat using Guid(80114bc117609cd4e9c988f8692e7a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '079a8e819c068cea818e3f3f76cf742b') in 0.182765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/tank.mat
+  artifactKey: Guid(479cbf10a2ba803449168e0148bcdbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Stylized city/Materials/tank.mat using Guid(479cbf10a2ba803449168e0148bcdbb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3f80c0729acc38e213f51161cf8eb6') in 0.030231 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Materials/UnitTextureGreen12x.mat
+  artifactKey: Guid(8c13ddd2bc8fa4e85943376cf7c8bf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/PunBasics-Tutorial/Materials/UnitTextureGreen12x.mat using Guid(8c13ddd2bc8fa4e85943376cf7c8bf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7f2603ec759cdc17f0698e1e0f599c') in 0.027661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/Materials/SuitMaterial.mat
+  artifactKey: Guid(ed4e4079e2e99084d8d914283565fc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/Materials/SuitMaterial.mat using Guid(ed4e4079e2e99084d8d914283565fc5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '428a04b0d7c51acbab81ea99be452823') in 0.024168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Star3.mat
+  artifactKey: Guid(6468e83b5ee73a04287f94a26ef7a66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Star3.mat using Guid(6468e83b5ee73a04287f94a26ef7a66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8902aea97a553ea28e497d21a6f2b11d') in 0.031775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/tankco.mat
+  artifactKey: Guid(cceec12884c418c4bb19cef32dc2abc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/tankco.mat using Guid(cceec12884c418c4bb19cef32dc2abc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fb332534269bd3994fbeab8318b8900') in 0.041085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/UnitTextureBlue.mat
+  artifactKey: Guid(1401c9e6acd739e49a9caa91ab07ac7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/UnitTextureBlue.mat using Guid(1401c9e6acd739e49a9caa91ab07ac7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69e3639ee7ef95c84b3aaae04de14583') in 0.027804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Star5.mat
+  artifactKey: Guid(3c536db6bf666d74e99d046d6a933d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Star5.mat using Guid(3c536db6bf666d74e99d046d6a933d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e9a78b1c5dead37c45a623ed84307ac') in 0.032354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.093046 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Spark2.mat
+  artifactKey: Guid(ae4696aff994b8443ae966782a67224e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Spark2.mat using Guid(ae4696aff994b8443ae966782a67224e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4875b4b7682aac0f7bf5411272816b7') in 0.054651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Models/Materials/SpaceshipHull.mat
+  artifactKey: Guid(de6b3d1666741b24597a4349a143eeb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Models/Materials/SpaceshipHull.mat using Guid(de6b3d1666741b24597a4349a143eeb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccb60d9798a5974f5cd343e62821343') in 0.029350 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Spark6.mat
+  artifactKey: Guid(d1a2286650468fe4ca4aba51af7bbe67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Spark6.mat using Guid(d1a2286650468fe4ca4aba51af7bbe67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d415751d37dfa56b0158d32ac7015b') in 0.033453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Spark5.mat
+  artifactKey: Guid(7145e087e1edaf04287f49014d94a1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Spark5.mat using Guid(7145e087e1edaf04287f49014d94a1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee8a2410d583482cb15f8c1b8189391') in 0.036197 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/Robot_Color.mat
+  artifactKey: Guid(0aa851515cd3747d6b3b3e461199a2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Materials/Robot_Color.mat using Guid(0aa851515cd3747d6b3b3e461199a2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf30de022e96e8a2cc252f1b3749ce6') in 0.035701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/road.mat
+  artifactKey: Guid(4b56a40ac6992974b8aac0882a4c7555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/road.mat using Guid(4b56a40ac6992974b8aac0882a4c7555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c74c7f1cc0e79ed3db0415baa88fff4') in 0.029952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Models/Materials/SpaceshipGlow.mat
+  artifactKey: Guid(609dbe3d30c4bf84ca15ce89479d7919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoAsteroids/Models/Materials/SpaceshipGlow.mat using Guid(609dbe3d30c4bf84ca15ce89479d7919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd82060d69e8876aea424e90e9e68bb8') in 0.025479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.282757 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Ring.mat
+  artifactKey: Guid(eb881d315be7d07409ca65619ea6252e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Ring.mat using Guid(eb881d315be7d07409ca65619ea6252e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5ec8383102b098b41ff836b8ae9710d') in 0.041710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Ring5.mat
+  artifactKey: Guid(c061c555d0180d54d8d4a51514f0d2d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Ring5.mat using Guid(c061c555d0180d54d8d4a51514f0d2d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a1c0d592dcf2b751d90d1e23ef487b5') in 0.031441 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.206756 seconds.
+  path: Assets/PolygonBattleRoyale/Models/Characters/Materials/PolygonMilitary_Texture_01_C.mat
+  artifactKey: Guid(34d9ade3aa9cc154aa196f1efbe74c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/Characters/Materials/PolygonMilitary_Texture_01_C.mat using Guid(34d9ade3aa9cc154aa196f1efbe74c2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9071b568b1e4f1b71b872983bbeab384') in 0.041829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/PolygonBattleRoyale/Models/Characters/Materials/PolygonWar_Texture.mat
+  artifactKey: Guid(acf5b39562e58d349913cbeb232b78ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/Characters/Materials/PolygonWar_Texture.mat using Guid(acf5b39562e58d349913cbeb232b78ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a988129d36bfbdfa76315b1b0776e4c0') in 0.031234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.390246 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/FX/PolygonBattleRoyale_Water.mat
+  artifactKey: Guid(7ebfd405eb8711d4bb584f620ef5043a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/FX/PolygonBattleRoyale_Water.mat using Guid(7ebfd405eb8711d4bb584f620ef5043a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76d6a25fb7b623b0d4a525cc822f7953') in 0.039459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Wep_Chrome.mat
+  artifactKey: Guid(a58944adfd600ee4b9aba71764944ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Wep_Chrome.mat using Guid(a58944adfd600ee4b9aba71764944ee9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05e3642ea1783a5d5d89ea9de363636a') in 0.433881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_05.mat
+  artifactKey: Guid(0b37fc8c20ed60a429462b14c2bd82dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_05.mat using Guid(0b37fc8c20ed60a429462b14c2bd82dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f5b589943145650f536ade66843242b') in 0.172680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_Plane_03.mat
+  artifactKey: Guid(22dd8f205cb99e14fabd7f8c178f6a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_Plane_03.mat using Guid(22dd8f205cb99e14fabd7f8c178f6a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12eb8d76dc6ef4a7e8e017ccc17c45fa') in 0.107581 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_Veh_01.mat
+  artifactKey: Guid(efe956fcc48a9a444a666d5d3de9ec34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_Veh_01.mat using Guid(efe956fcc48a9a444a666d5d3de9ec34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee547e5d2e6b0d4216c80941045d5027') in 0.029277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_04_A.mat
+  artifactKey: Guid(104879306de394242abb32cffee7abcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_04_A.mat using Guid(104879306de394242abb32cffee7abcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c179b6cb56b06ef001d9ab1cee1dc3ed') in 0.027213 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_04_B.mat
+  artifactKey: Guid(c7d2b77e9eb74f141b05376aeb31ed25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_04_B.mat using Guid(c7d2b77e9eb74f141b05376aeb31ed25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ed3ff677c572cf0f9155ba2473e979') in 0.173739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_04.mat
+  artifactKey: Guid(5fd51ca81b99611429622c40545dff0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_04.mat using Guid(5fd51ca81b99611429622c40545dff0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Failed to load 'F:/AIAclassdata/Unity/Unity Project/Multi_Mini/Library/Artifacts/8a/8adbad246c1f00838872b651f5d17464'. File may be corrupted or was serialized with a newer version of Unity.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.PreviewRenderUtility:Render (bool,bool)
+UnityEditor.MaterialEditor:DoRenderPreview (UnityEditor.PreviewRenderUtility,bool)
+UnityEditor.MaterialEditor:RenderStaticPreview (string,UnityEngine.Object[],int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreview (UnityEngine.Object,UnityEngine.Object[],string,int,int)
+UnityEditor.AssetPreviewUpdater:CreatePreviewForAsset (UnityEngine.Object,UnityEngine.Object[],string)
+
+[ line 0]
+
+ -> (artifact id: 'f77cc832504b41d77e48f751ddbefb22') in 0.038169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 113.847164 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Beach_Staight_02.fbx
+  artifactKey: Guid(82965ee4d06b25c469820e00177b2903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Beach_Staight_02.fbx using Guid(82965ee4d06b25c469820e00177b2903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76d32cd93dff32b825ef6bbe89f36246') in 0.107574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bush_03.fbx
+  artifactKey: Guid(04bbdaa8bfe69504ea83e5ea21471860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bush_03.fbx using Guid(04bbdaa8bfe69504ea83e5ea21471860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2448e487468695c78bf4e5123cd64aa8') in 0.034380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bush_02.fbx
+  artifactKey: Guid(bc207702110a19249a5268637c89c597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bush_02.fbx using Guid(bc207702110a19249a5268637c89c597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6237244687eefa3d799231222f56c61b') in 0.038963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Port_Wall_Corner_01.fbx
+  artifactKey: Guid(8ab522562fa79854e8d588e9f2956d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Port_Wall_Corner_01.fbx using Guid(8ab522562fa79854e8d588e9f2956d79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0adf32b1941b59d11fa6b70231446d86') in 0.048146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_Broken_01.fbx
+  artifactKey: Guid(d745b13401dd943438b4a3964e339171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_Broken_01.fbx using Guid(d745b13401dd943438b4a3964e339171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c207930c34b7ee5674916b12fab5275') in 0.036404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bush_04.fbx
+  artifactKey: Guid(3743645f000788c469dd53eef871faa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bush_04.fbx using Guid(3743645f000788c469dd53eef871faa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b1f2834b8a9c9a77480210eb7fd01b') in 0.036747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bush_01.fbx
+  artifactKey: Guid(1fae48495be93f44a956df845a775656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bush_01.fbx using Guid(1fae48495be93f44a956df845a775656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f91ed0f1506a3e428fe3494adbd627') in 0.030286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Veh_Plane_Destroyed_01.fbx
+  artifactKey: Guid(4682e67e862cfb041829f0e8b78e0826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Veh_Plane_Destroyed_01.fbx using Guid(4682e67e862cfb041829f0e8b78e0826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5980d84a198d7193f706b82c31e8e056') in 0.054909 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_Support_01.fbx
+  artifactKey: Guid(e5264b893aca21f46814e1c8c687b8ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_Support_01.fbx using Guid(e5264b893aca21f46814e1c8c687b8ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '957525db7ac1b6660bb2a6e8ca5b861a') in 0.031039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.612138 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bush_03_Convex.asset
+  artifactKey: Guid(9b939ca854c997c4cb7ba5352fbdbc32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bush_03_Convex.asset using Guid(9b939ca854c997c4cb7ba5352fbdbc32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5aa8ecbdc833a75023b2f4b1fa97be1') in 0.045278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bush_04_Convex.asset
+  artifactKey: Guid(bd7a53bf092105e4eb656aa963f03895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bush_04_Convex.asset using Guid(bd7a53bf092105e4eb656aa963f03895) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77ca14040334f770ba631f4d1129bc4f') in 0.036755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_Support_01_Convex.asset
+  artifactKey: Guid(de55734a72c0aff479edba9d7041afbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_Support_01_Convex.asset using Guid(de55734a72c0aff479edba9d7041afbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a483996cf2a6a22b6edfda0f141a53c5') in 0.026731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bush_01_Convex.asset
+  artifactKey: Guid(35f16dde67a50664bb4036d8fba4f7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bush_01_Convex.asset using Guid(35f16dde67a50664bb4036d8fba4f7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43374e9fdccfd9b93c75b80c01868ca3') in 0.019759 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.316009 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_Broken_01_Convex 2.asset
+  artifactKey: Guid(b7cecca56fae98b40ad8531fb2c1ba0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_Broken_01_Convex 2.asset using Guid(b7cecca56fae98b40ad8531fb2c1ba0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea0a87a867788998fcc96c4c61564c4a') in 0.050249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_02_Convex 1.asset
+  artifactKey: Guid(7f757b33b3199e943af5c4975aab28ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_02_Convex 1.asset using Guid(7f757b33b3199e943af5c4975aab28ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dccb542894f53404d7b19b6a507d1b8') in 0.040870 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_01_Convex 1.asset
+  artifactKey: Guid(dbe3855defb87874589d70a01b5d52f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Bridge_01_Convex 1.asset using Guid(dbe3855defb87874589d70a01b5d52f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9a244150d8ce5d90cafcc07c20eb33a') in 0.041769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.251937 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Star_02_Convex.asset
+  artifactKey: Guid(52c24ca4358629540a564cdb9f177115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Star_02_Convex.asset using Guid(52c24ca4358629540a564cdb9f177115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1fb233deca5827721e3031ad264678') in 0.020388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.655889 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Rank_03_Convex.asset
+  artifactKey: Guid(6b4531f3b18d1414a88a8d8a2e437797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Rank_03_Convex.asset using Guid(6b4531f3b18d1414a88a8d8a2e437797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cfa4a7298e92c639b5d915e31645426') in 0.023017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001049 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Medic_02_Convex.asset
+  artifactKey: Guid(c28eedcef589577488d093fe9424c688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Medic_02_Convex.asset using Guid(c28eedcef589577488d093fe9424c688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e7e00a816d2aa5ba883dfa14491f2d6') in 0.023285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Rank_02.fbx
+  artifactKey: Guid(79b2fcac207245c4297dd0ca0a381e79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Rank_02.fbx using Guid(79b2fcac207245c4297dd0ca0a381e79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd63173d759d8c3eae7f2cf0e2bb85e8c') in 0.033877 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Medic_02.fbx
+  artifactKey: Guid(a220382767cf94a4caeb12538e106bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Medic_02.fbx using Guid(a220382767cf94a4caeb12538e106bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d6f91e0f8a3f7a2b429d3fba498f04') in 0.032492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Scarf_01.fbx
+  artifactKey: Guid(82821dc427faa0542bc52cc9fa97e5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Scarf_01.fbx using Guid(82821dc427faa0542bc52cc9fa97e5f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d45f1e7ca4a2a41b8ca89dc6f6b9699') in 0.027306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Flag_01.fbx
+  artifactKey: Guid(1811907655e334d4e98716b81a2824e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Patch_Flag_01.fbx using Guid(1811907655e334d4e98716b81a2824e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa477e3ebfd90cd5c22e28382d47fd6') in 0.034022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.312338 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_07_Convex.asset
+  artifactKey: Guid(a1608e1a71ff35c48ad93f1b8b1aaf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_07_Convex.asset using Guid(a1608e1a71ff35c48ad93f1b8b1aaf72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1b681e0b71993b1489556116791340c') in 0.023718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.096877 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_05_Convex.asset
+  artifactKey: Guid(3052e013a9c5828408631d523bbf0a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_05_Convex.asset using Guid(3052e013a9c5828408631d523bbf0a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb2557c462b6d88136d67ff12019293') in 0.026266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_06.fbx
+  artifactKey: Guid(b78e1c48ad540654587c4ccd925308f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_06.fbx using Guid(b78e1c48ad540654587c4ccd925308f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69dd7c5fb3d91fc69ac051c86f283275') in 0.036260 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_02_Convex.asset
+  artifactKey: Guid(268f7d064cf46e34a977b01d4533c2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_02_Convex.asset using Guid(268f7d064cf46e34a977b01d4533c2f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a0e9a5d1fc8096abfa7ee199b98476') in 0.020973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000838 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Male_Hair_06_Convex.asset
+  artifactKey: Guid(3c85a3d1ada9ecb4c961229590175ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Male_Hair_06_Convex.asset using Guid(3c85a3d1ada9ecb4c961229590175ffb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32d840bdcf2e317417c61689dd22b43') in 0.020394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_01_Convex.asset
+  artifactKey: Guid(4abb965eef12aa74a8a2d9b95697ad42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_01_Convex.asset using Guid(4abb965eef12aa74a8a2d9b95697ad42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a15331dbb1cb820c35d835cc822f94') in 0.022704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_02.fbx
+  artifactKey: Guid(fecffd4ed95d4f2419dd0414399c2a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Pouch_02.fbx using Guid(fecffd4ed95d4f2419dd0414399c2a3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cff161dcdc3ed6d885474a6ce651bc32') in 0.032331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.248329 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Male_Hair_04_Convex.asset
+  artifactKey: Guid(fb22c8fc52dcfce489c3805712ce916b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Male_Hair_04_Convex.asset using Guid(fb22c8fc52dcfce489c3805712ce916b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '844eadb6fe6833b28c4452315e73b895') in 0.019171 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Male_Hair_02.fbx
+  artifactKey: Guid(ff50aaf0c2c8dc74bb090fb2c5fd1bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Male_Hair_02.fbx using Guid(ff50aaf0c2c8dc74bb090fb2c5fd1bcd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30982ebdf0b974eb80f38493768017a2') in 0.034109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Male_Hair_03.fbx
+  artifactKey: Guid(94224a98d86530d4eb38b51c723d4bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Male_Hair_03.fbx using Guid(94224a98d86530d4eb38b51c723d4bdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe5d96bd2a805ebf7c2a76a2bbd8066f') in 0.036747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Male_Default_Hair_01.fbx
+  artifactKey: Guid(9c95e0f59272e9440a22ceb09dc982a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Male_Default_Hair_01.fbx using Guid(9c95e0f59272e9440a22ceb09dc982a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5465d6a1a6c5545cd1c366a7a5b5620') in 0.030774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.561839 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Turban_01_Convex.asset
+  artifactKey: Guid(63a66039fdb6fb34084ce1a7020d99d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Turban_01_Convex.asset using Guid(63a66039fdb6fb34084ce1a7020d99d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce4f7131daae706cb6d0e74c8d746687') in 0.021598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Tacticle_01.fbx
+  artifactKey: Guid(9791e0bc787af4246930451ad26fdc37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Tacticle_01.fbx using Guid(9791e0bc787af4246930451ad26fdc37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '787764f057d63785ec0f12d57178e3b1') in 0.059456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Samurai_01_Convex.asset
+  artifactKey: Guid(df5196e30ff20d7419973ff37747ca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Samurai_01_Convex.asset using Guid(df5196e30ff20d7419973ff37747ca24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc27c870574abf01e11715b71e752dbe') in 0.021899 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Racoon_01_Convex.asset
+  artifactKey: Guid(932b1d5cb06295e4cb757fdd1b7d44a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Racoon_01_Convex.asset using Guid(932b1d5cb06295e4cb757fdd1b7d44a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398ac1281c9de29b37c94af6ce884d0f') in 0.021490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Roman_01_Convex.asset
+  artifactKey: Guid(2c082b12dd3bb6843a7e29ee3e30e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Roman_01_Convex.asset using Guid(2c082b12dd3bb6843a7e29ee3e30e7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd3fd7ee8648cfe51e1a6e98f9e35e61') in 0.024125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Roadcone_01.fbx
+  artifactKey: Guid(12c46932a9bc07247b19ce81dd7f331d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Roadcone_01.fbx using Guid(12c46932a9bc07247b19ce81dd7f331d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695e7716a43333cc32ea989c20eee170') in 0.027912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.243167 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Pot_01_Convex.asset
+  artifactKey: Guid(fc7064618f52fef4287ac490a0e091c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Pot_01_Convex.asset using Guid(fc7064618f52fef4287ac490a0e091c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ec9d35aa3d7da402b499ba40a54e99f') in 0.026521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Party_01.fbx
+  artifactKey: Guid(647e16b6c1fd043408356f1e65ec0cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Party_01.fbx using Guid(647e16b6c1fd043408356f1e65ec0cc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8629329b967b0e1b6916228008132494') in 0.030539 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Mil_01.fbx
+  artifactKey: Guid(9c2cda8ea60423448a3f86a1e94bc82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Mil_01.fbx using Guid(9c2cda8ea60423448a3f86a1e94bc82a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54e19e096878b185000d92bfca02c7ec') in 0.028584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.018628 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_IceCream_01_Convex.asset
+  artifactKey: Guid(9ac47e6931f050a419d4ce3274f334e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_IceCream_01_Convex.asset using Guid(9ac47e6931f050a419d4ce3274f334e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c041fab3654890cfb26073d5c25cc8') in 0.021494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Irish_01_Convex.asset
+  artifactKey: Guid(dade7cff4df16e4429e007214462c576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Irish_01_Convex.asset using Guid(dade7cff4df16e4429e007214462c576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a4e8c1f0f200f025427597cd7ac3c5') in 0.020267 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Irish_01.fbx
+  artifactKey: Guid(25520fa1a47af9640a7181c96c16526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Irish_01.fbx using Guid(25520fa1a47af9640a7181c96c16526b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce4eb2e239aac58e5939368970850909') in 0.028026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.145124 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_FlatTop_01_Convex.asset
+  artifactKey: Guid(e1d866abba0e3704d9f8cb75e03c80e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_FlatTop_01_Convex.asset using Guid(e1d866abba0e3704d9f8cb75e03c80e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49d2abffbaa3583946d86516bf90c845') in 0.022323 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.059810 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Crown_01_Convex.asset
+  artifactKey: Guid(c0deea47781aa074aaec912bed8ce168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Crown_01_Convex.asset using Guid(c0deea47781aa074aaec912bed8ce168) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66c633b37d735b1f78b23a9d60d3514c') in 0.020217 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Elf_01.fbx
+  artifactKey: Guid(337fc3a9230648e49930044a2eea2a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Elf_01.fbx using Guid(337fc3a9230648e49930044a2eea2a08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee153944b19e1b88df309218c5d50ab4') in 0.035346 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Elf_01_Convex.asset
+  artifactKey: Guid(90877e33c00bab34db2f0695bd046768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Elf_01_Convex.asset using Guid(90877e33c00bab34db2f0695bd046768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dddd5f00601cf8e1b20b45510c4bd3c') in 0.018802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.591595 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Captian_01_Convex.asset
+  artifactKey: Guid(5692811032456884a97b63d593113927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Captian_01_Convex.asset using Guid(5692811032456884a97b63d593113927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '335bbc061fccda54b35e72b7dbe48664') in 0.022560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Cap_01.fbx
+  artifactKey: Guid(6a41033f96ab78c4eb9c3b8c0fd56e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Cap_01.fbx using Guid(6a41033f96ab78c4eb9c3b8c0fd56e3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39ab7571fe5d09a73550647ea95c09e9') in 0.029103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005207 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_GasMask_01_Convex.asset
+  artifactKey: Guid(018149c816cee8e45a75cd43a977bb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_GasMask_01_Convex.asset using Guid(018149c816cee8e45a75cd43a977bb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a15a3ccc1b409bd5a69f1ca86abb228') in 0.021954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Beanie_01_Convex.asset
+  artifactKey: Guid(edfc4fd006a38ca40a0575a7737faf77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Hat_Beanie_01_Convex.asset using Guid(edfc4fd006a38ca40a0575a7737faf77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e372f5bbb03523c6c7a2d838f0445d0') in 0.023852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Glasses_01.fbx
+  artifactKey: Guid(cdbdf703bdb42624e923c7e4c62c5ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Glasses_01.fbx using Guid(cdbdf703bdb42624e923c7e4c62c5ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a8394e7563f3eadd3bd35b5fada9df') in 0.030395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.491577 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Female_Hair_Pigtails_01_Convex.asset
+  artifactKey: Guid(75c9a6a6053ced44ba63094732db8aa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Female_Hair_Pigtails_01_Convex.asset using Guid(75c9a6a6053ced44ba63094732db8aa1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ae5bf1d759e738c936aba2a6198406') in 0.022636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Female_Hair_01.fbx
+  artifactKey: Guid(133222c51963f9045b5b5eb42f866d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Female_Hair_01.fbx using Guid(133222c51963f9045b5b5eb42f866d80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e988d88cc1ed5a78a480edb596f81607') in 0.040278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.031760 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Female_01_Convex.asset
+  artifactKey: Guid(aeca703a7e0eeab4f8b90dd555b70b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Female_01_Convex.asset using Guid(aeca703a7e0eeab4f8b90dd555b70b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2de585dadedfc53f29f93227ef01ee8') in 0.020044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.470519 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Facemask_02_Convex.asset
+  artifactKey: Guid(50edb4ec860eb5649bf249ca2d4ebf48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Facemask_02_Convex.asset using Guid(50edb4ec860eb5649bf249ca2d4ebf48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd46d42a8a63bf237eb93fda756de93e2') in 0.023796 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Facemask_01.fbx
+  artifactKey: Guid(cf4b0448ec04ca5408786bf4f6cd0926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Facemask_01.fbx using Guid(cf4b0448ec04ca5408786bf4f6cd0926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22186a1965fd6b0174594bed1320eb27') in 0.050852 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012682 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Beard_06.fbx
+  artifactKey: Guid(fa2376092f8167246a26214ab80a7cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Beard_06.fbx using Guid(fa2376092f8167246a26214ab80a7cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bcec683e15d222c4cfe5ead1e22a4c8') in 0.035073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Beard_06_Convex.asset
+  artifactKey: Guid(446e769689b922645b3c75042b25466d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Beard_06_Convex.asset using Guid(446e769689b922645b3c75042b25466d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff2f7b3a6b66362ebfb96bf56c16bbe') in 0.036822 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Bedroll_01_Convex.asset
+  artifactKey: Guid(6e0ad5385ea220148a6f8aae48139719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Bedroll_01_Convex.asset using Guid(6e0ad5385ea220148a6f8aae48139719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a30ba3bdaafde7cce4f2588d8c5f3d2') in 0.025948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.233026 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Beard_04_Convex.asset
+  artifactKey: Guid(a2bb514c33c8e4646bec0313906177b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Beard_04_Convex.asset using Guid(a2bb514c33c8e4646bec0313906177b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0319922681e815ada32412645c104fb') in 0.020626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Ammo_01_Convex.asset
+  artifactKey: Guid(a21abf58b2cc5194eb551fb570da6777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Ammo_01_Convex.asset using Guid(a21abf58b2cc5194eb551fb570da6777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd42d33b7775a5e14415587bbe07fc08') in 0.024555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Beard_02.fbx
+  artifactKey: Guid(5b0b4402694aa2b4186d1b6094658ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Chr_Attach_Beard_02.fbx using Guid(5b0b4402694aa2b4186d1b6094658ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '520ac9e29628d9220a41cfbffd46bdb4') in 0.028736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.042971 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Char_Attach_Bag_Lvl3_Convex.asset
+  artifactKey: Guid(009939921c8857243a07f354218517f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Char_Attach_Bag_Lvl3_Convex.asset using Guid(009939921c8857243a07f354218517f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb09cdbf4e5fcf1e662072d360c6d531') in 0.019492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.150764 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Char_Attach_Bag_Lvl2.fbx
+  artifactKey: Guid(f8033a124f820234384223a33191f9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Char_Attach_Bag_Lvl2.fbx using Guid(f8033a124f820234384223a33191f9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3c3a2cfa9d827a24934328ba227f452') in 0.030189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.126674 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Env_Rubble_Pile_02_Convex.asset
+  artifactKey: Guid(4190df2717e2b654286118a642c43ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Env_Rubble_Pile_02_Convex.asset using Guid(4190df2717e2b654286118a642c43ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29685ad695be14e7c7b1fca8744f5948') in 0.036206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Prop_BaseWall_Broken_01_Convex.asset
+  artifactKey: Guid(ac94cdd4ae15f0340a3aa97f17d6ef49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Prop_BaseWall_Broken_01_Convex.asset using Guid(ac94cdd4ae15f0340a3aa97f17d6ef49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a37ece609bfa83cc34d665e4d68205') in 0.021277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Prop_GuardTower_01_Convex.asset
+  artifactKey: Guid(a058b63cc7c7dbe469d1e3cb37c07726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Prop_GuardTower_01_Convex.asset using Guid(a058b63cc7c7dbe469d1e3cb37c07726) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a27d9c825fdd726360000e5c320076f') in 0.024185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Prop_Gauze_01_Convex.asset
+  artifactKey: Guid(d7b8a8be18e416d4ab50ea40f0a41daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Prop_Gauze_01_Convex.asset using Guid(d7b8a8be18e416d4ab50ea40f0a41daa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840db4c6b8e78e1d12d8225b9f6d767b') in 0.031150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Prop_BaseWall_Post_01_Convex.asset
+  artifactKey: Guid(f003132c6f0e55240a0c5fae2d0b59c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Prop_BaseWall_Post_01_Convex.asset using Guid(f003132c6f0e55240a0c5fae2d0b59c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49704b6036527b904435f607dce0162d') in 0.028174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Generic_Tree_03_Convex.asset
+  artifactKey: Guid(2cba5bacf8abc9c419821405a7c6414a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Generic_Tree_03_Convex.asset using Guid(2cba5bacf8abc9c419821405a7c6414a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077041b10338469c4f62dbb87ea79603') in 0.038500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/PolygonBattleRoyale/Models/SM_Prop_Crate_Small_01_Convex.asset
+  artifactKey: Guid(4e6c0666269789e4eb3326a641235b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/SM_Prop_Crate_Small_01_Convex.asset using Guid(4e6c0666269789e4eb3326a641235b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407ec720e6ac5fef1ca7ce726ebe9655') in 0.023081 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005639 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.491 seconds
+- Completed reload, in  1.483 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1492ms)
-		BeginReloadAssembly (308ms)
+	ReloadAssembly (1484ms)
+		BeginReloadAssembly (334ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (1036ms)
-			LoadAssemblies (254ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (1027ms)
+			LoadAssemblies (311ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (351ms)
+			SetupTypeCache (323ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (489ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (477ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (62ms)
-				SetLoadedEditorAssemblies (0ms)
+				InitializePlatformSupportModulesInManaged (44ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (153ms)
-				ProcessInitializeOnLoadAttributes (230ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (20ms)
+				BeforeProcessingInitializeOnLoad (158ms)
+				ProcessInitializeOnLoadAttributes (224ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (21ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.10 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.61 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (80.3 KB). Loaded Objects now: 3789.
-Memory consumption went from 123.8 MB to 123.7 MB.
-Total: 2.861100 ms (FindLiveObjects: 0.251000 ms CreateObjectMapping: 0.150300 ms MarkObjects: 2.374000 ms  DeleteObjects: 0.084800 ms)
+Unloading 22 unused Assets / (80.3 KB). Loaded Objects now: 3872.
+Memory consumption went from 142.9 MB to 142.8 MB.
+Total: 4.774200 ms (FindLiveObjects: 0.317400 ms CreateObjectMapping: 0.208900 ms MarkObjects: 4.091300 ms  DeleteObjects: 0.155100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -351,50 +1533,50 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005922 seconds.
+Registered in 0.004871 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image E:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image E:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.520 seconds
+- Completed reload, in  1.517 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1521ms)
-		BeginReloadAssembly (303ms)
+	ReloadAssembly (1518ms)
+		BeginReloadAssembly (331ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (1082ms)
-			LoadAssemblies (244ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1045ms)
+			LoadAssemblies (299ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (353ms)
+			SetupTypeCache (319ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (508ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (500ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (53ms)
+				InitializePlatformSupportModulesInManaged (59ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (158ms)
-				ProcessInitializeOnLoadAttributes (238ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (32ms)
+				BeforeProcessingInitializeOnLoad (170ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (33ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.47 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3298 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (80.2 KB). Loaded Objects now: 3793.
-Memory consumption went from 123.8 MB to 123.7 MB.
-Total: 5.928900 ms (FindLiveObjects: 0.491900 ms CreateObjectMapping: 0.383100 ms MarkObjects: 4.856000 ms  DeleteObjects: 0.195800 ms)
+Unloading 22 unused Assets / (80.2 KB). Loaded Objects now: 3876.
+Memory consumption went from 142.9 MB to 142.8 MB.
+Total: 2.533300 ms (FindLiveObjects: 0.252000 ms CreateObjectMapping: 0.158800 ms MarkObjects: 2.040700 ms  DeleteObjects: 0.081100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -406,3 +1588,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -1,0 +1,294 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.19f1 (c9714fde33b6) revision 13201743'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'ko' Physical Memory: 32542 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+F:\AIAclassdata\Unity\Unity Editor\2021.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+F:/AIAclassdata/Unity/Unity Project/Multi_Mini
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+51862
+Successfully changed project path to: F:/AIAclassdata/Unity/Unity Project/Multi_Mini
+F:/AIAclassdata/Unity/Unity Project/Multi_Mini
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [12676] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 2220257471 [EditorId] 2220257471 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RA0QDOO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [12676] Host "[IP] 192.168.0.14 [Port] 0 [Flags] 2 [Guid] 2220257471 [EditorId] 2220257471 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-RA0QDOO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 107.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.19f1 (c9714fde33b6)
+[Subsystems] Discovering subsystems at path F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path F:/AIAclassdata/Unity/Unity Project/Multi_Mini/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2080 (ID=0x1e82)
+    Vendor:   NVIDIA
+    VRAM:     8011 MB
+    Driver:   31.0.15.1766
+Initialize mono
+Mono path[0] = 'F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56076
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.032368 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 245 ms
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 109.02 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.053 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1053ms)
+		BeginReloadAssembly (133ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (778ms)
+			LoadAssemblies (133ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (116ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (580ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (321ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (109ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003785 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image F:\AIAclassdata\Unity\Unity Project\Multi_Mini\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.186 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1188ms)
+		BeginReloadAssembly (157ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (910ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (272ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (461ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (33ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (268ms)
+				ProcessInitializeOnLoadMethodAttributes (21ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3312 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 30 unused Assets / (113.7 KB). Loaded Objects now: 3777.
+Memory consumption went from 125.4 MB to 125.3 MB.
+Total: 2.624400 ms (FindLiveObjects: 0.243000 ms CreateObjectMapping: 0.143000 ms MarkObjects: 2.148600 ms  DeleteObjects: 0.089100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 955628.279894 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Spark3.mat
+  artifactKey: Guid(bbac47c68408c55409d15aec53362039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Spark3.mat using Guid(bbac47c68408c55409d15aec53362039) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28829366e4a52a25b4644df59a37db90') in 0.202923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/Materials/SkinMaterial.mat
+  artifactKey: Guid(37d0d4d178b5dbf449ff0814718dc354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/Shared Assets/Animations/Materials/SkinMaterial.mat using Guid(37d0d4d178b5dbf449ff0814718dc354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03325a21e43c56dca25363bd7ee5a4f9') in 0.035086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Ring6.mat
+  artifactKey: Guid(76f106c1d383cdb488221f22579be3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Ring6.mat using Guid(76f106c1d383cdb488221f22579be3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ca3b64aff5821739d53a7385dd7ecd') in 0.031585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.276932 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Ring2.mat
+  artifactKey: Guid(2b278f353ca754c4e84cf15f84c04e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Ring2.mat using Guid(2b278f353ca754c4e84cf15f84c04e70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f73a127f65cc4cc01a0321437e1840ba') in 0.043015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/52SpecialEffectPack/Texture/Ring3.mat
+  artifactKey: Guid(c358ce2baab9c294b89630c7e3f48b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/52SpecialEffectPack/Texture/Ring3.mat using Guid(c358ce2baab9c294b89630c7e3f48b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3146a71a08192c33ecf690549550c3b') in 0.031232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.203923 seconds.
+  path: Assets/PolygonBattleRoyale/Models/Characters/Materials/PolygonMilitary_Texture_01_D.mat
+  artifactKey: Guid(066652f570d001b40aed048d4759fcc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Models/Characters/Materials/PolygonMilitary_Texture_01_D.mat using Guid(066652f570d001b40aed048d4759fcc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb314dee87bb3b623fe00b2ebdc49b43') in 0.049210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/red.mat
+  artifactKey: Guid(0d79812c7a78bb641b1ee85ce7da18c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Kenney Assets/Racing Kit/Models/Materials/red.mat using Guid(0d79812c7a78bb641b1ee85ce7da18c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c1eb7b78ae17408b62ed92fbd983bab') in 0.033512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.381306 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_Wep_01.mat
+  artifactKey: Guid(931a8223b8cb7e449bd50e42d6c0a2d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_Wep_01.mat using Guid(931a8223b8cb7e449bd50e42d6c0a2d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d76b5bbca40ab5371962d06580002a6') in 0.045229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_WireFence.mat
+  artifactKey: Guid(555210c09ab5dee4593b4a08d6ea25bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_WireFence.mat using Guid(555210c09ab5dee4593b4a08d6ea25bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0968dd34670b8d5926677cb1b86ced40') in 0.047458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_Glass.mat
+  artifactKey: Guid(2174d5778347afe4cb8e0e43572c4a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_Glass.mat using Guid(2174d5778347afe4cb8e0e43572c4a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41feddb18bcef2603a509a353ca31013') in 0.024723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_Veh_Plane_01.mat
+  artifactKey: Guid(d926aacd9d68a6e40a3b194bce6c52b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_Veh_Plane_01.mat using Guid(d926aacd9d68a6e40a3b194bce6c52b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '224643fe21ea92dff6fe539ba3fc465c') in 0.106567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_Plane_04.mat
+  artifactKey: Guid(dd085168934e68443b9fe2499b5e81d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_Plane_04.mat using Guid(dd085168934e68443b9fe2499b5e81d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e08462c20aa9b28747298b55ccd522dd') in 0.106018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_Plane_02.mat
+  artifactKey: Guid(0ae7a1c52ecbb474e9d597bea6de57a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_Plane_02.mat using Guid(0ae7a1c52ecbb474e9d597bea6de57a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa608970437eae2f30f8ff74bc1a599') in 0.110307 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_03.mat
+  artifactKey: Guid(926b06689c041f24ea3c952075558d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_03.mat using Guid(926b06689c041f24ea3c952075558d7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1abcb9e8ffb25c29c17e24d7eeff34') in 0.178251 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_Road.mat
+  artifactKey: Guid(c03cd3022949c6e43af60b56befeddf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_Road.mat using Guid(c03cd3022949c6e43af60b56befeddf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e2c1e2c657cf57cea0f2df4b6b748b7') in 0.028162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_02.mat
+  artifactKey: Guid(d9ed4841675c689489bf2f3f8d7d731c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_02.mat using Guid(d9ed4841675c689489bf2f3f8d7d731c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1049aefdd32866c2b7bca35ad080edc3') in 0.090556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_Destroyed_01.mat
+  artifactKey: Guid(5ccfeb15f38a40e4dbf7b5a88ee0cb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/Alts/PolygonBattleRoyale_Veh_Destroyed_01.mat using Guid(5ccfeb15f38a40e4dbf7b5a88ee0cb52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121f95ad1099778bc73b44437461fbf4') in 0.026591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/FX/PolygonBattleRoyale_FX_Dirt.mat
+  artifactKey: Guid(ae3fa6191020bd246ab9645e0c167855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/FX/PolygonBattleRoyale_FX_Dirt.mat using Guid(ae3fa6191020bd246ab9645e0c167855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b5386cc2f33323dd7ae61e33265f96f') in 0.111195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/FX/PolygonBattleRoyale_FX_Emmision.mat
+  artifactKey: Guid(43661ff2635bdc947b87d5d0f816367e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/FX/PolygonBattleRoyale_FX_Emmision.mat using Guid(43661ff2635bdc947b87d5d0f816367e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '261fe9ae663d623a7d4ea1e8406df9e8') in 0.086382 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_Glass.mat
+  artifactKey: Guid(447dc53fa48380a4fa063de19aa75b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonBattleRoyale/Materials/PolygonBattleRoyale_Glass.mat using Guid(447dc53fa48380a4fa063de19aa75b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9994bd8bacc7782c1686d1a9556570') in 0.023775 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

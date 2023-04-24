@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class PlayerRotate : MonoBehaviour
 {
-    public float rotSpeed = 200;
+    //public float rotSpeed = 200;
 
-    float mx = 0;
+    //float mx = 0;
 
-    private void Update()
-    {
-        float mouse_X = Input.GetAxisRaw("Mouse X");
+    //private void Update()
+    //{
+    //    float mouse_X = Input.GetAxisRaw("Mouse X");
 
-        mx += mouse_X * rotSpeed * Time.deltaTime;
+    //    mx += mouse_X * rotSpeed * Time.deltaTime;
 
-        transform.eulerAngles = new Vector3(0, mx, 0);
-    }
+    //    transform.eulerAngles = new Vector3(0, mx, 0);
+    //}
 }

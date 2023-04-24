@@ -9,7 +9,7 @@ public class CamRotate : MonoBehaviour
     float mx = 0;
     float my = 0;
 
-    private void Update()
+    private void LateUpdate()
     {
         if (Input.GetKeyDown(KeyCode.LeftBracket))
         {

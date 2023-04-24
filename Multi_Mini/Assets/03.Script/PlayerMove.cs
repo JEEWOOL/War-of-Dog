@@ -1,10 +1,12 @@
+using Photon.Pun;
+using Photon.Realtime;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerMove : MonoBehaviourPunCallbacks
 {
     // 플레이어 이동 / 체력
     public float playerMoveSpeed = 5;
@@ -58,31 +60,34 @@ public class PlayerMove : MonoBehaviour
     Weapon weapon;
     GameObject gameManager;
 
+    // 포톤 연동 변수
+    public PhotonView pv;
+    public float rotSpeed = 200;
+    float mx = 0;    
+
     private void Awake()
     {
+        pv = GetComponent<PhotonView>();
+
         gameManager = GameObject.Find("GameManager");
         bomb_CoolTime = gameManager.GetComponent<GameManager>().bomb_CoolTime;
         bombCoolTime = gameManager.GetComponent<GameManager>().bombCoolTime;
         shield_CoolTime = gameManager.GetComponent<GameManager>().shield_CoolTime;
         shieldCoolTime = gameManager.GetComponent<GameManager>().shieldCoolTime;
         hp_Slider = gameManager.GetComponent<GameManager>().hp_Slider;
-        //bombCoolTime = GameManager.Instance.bombCoolTime;
-        //shield_CoolTime = GameManager.Instance.shield_CoolTime;
-        //shieldCoolTime = GameManager.Instance.shieldCoolTime;
-        //hp_Slider = GameManager.Instance.hp_Slider;
 
         cc = gameObject.GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
-        weapon = GetComponentInChildren<Weapon>();        
+        weapon = GetComponentInChildren<Weapon>();
+
+        curHealth = maxHealth;
     }
 
     private void Start()
     {
         hp_Slider.value = (float)curHealth / (float)maxHealth;        
         bombCoolTime.SetActive(false);
-        shieldCoolTime.SetActive(false);
-        //bombCoolTime.enabled = false;
-        //shieldCoolTime.enabled = false;
+        shieldCoolTime.SetActive(false);        
         bomb_CoolTime.fillAmount = 1;
         bomb = false;
         bomb_CoolTime.enabled = false;
@@ -94,14 +99,48 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
-        GetInput();
-        Move();
-        Attack();
-        Die();
-        HandleHp();
-        ThrowBomb();
-        Defend();
-        
+        if (pv.IsMine)
+        {
+            GetInput();
+
+            Move();
+
+            if (aDown && isAttackReady && stern == false && isDie == false && !isJumping)
+            {
+                Attack();
+
+                pv.RPC("Attack", RpcTarget.OthersBuffered, null);
+            }
+            if (curHealth <= 0)
+            {
+                Die();
+                pv.RPC("Die", RpcTarget.OthersBuffered, null);
+            }
+            HandleHp();
+            if (pv.IsMine && bDown && stern == false && isDie == false && bomb == false)
+            {
+                ThrowBomb();
+                pv.RPC("ThrowBomb", RpcTarget.OthersBuffered, null);
+            }
+            if (dDown && stern == false && isDie == false && shield == false)
+            {
+                Defend();
+                pv.RPC("Defend", RpcTarget.OthersBuffered, null);
+            }                        
+            //pv.RPC("HandleHp", RpcTarget.OthersBuffered, null);
+        }       
+    }
+
+    private void LateUpdate()
+    {
+        if (pv.IsMine)
+        {
+            float mouse_X = Input.GetAxisRaw("Mouse X");
+
+            mx += mouse_X * rotSpeed * Time.deltaTime;
+
+            transform.eulerAngles = new Vector3(0, mx, 0);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -112,6 +151,7 @@ public class PlayerMove : MonoBehaviour
             anim.SetTrigger("damage");
         }
     }
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Bomb" || collision.gameObject.tag == "Shield")
@@ -126,12 +166,12 @@ public class PlayerMove : MonoBehaviour
         yield return new WaitForSeconds(2f);
         stern = false;
     }
-
+    [PunRPC]
     void HandleHp()
     {
         hp_Slider.value = (float)curHealth / (float)maxHealth;
     }
-
+    
     void GetInput()
     {
         hAxis = Input.GetAxisRaw("Horizontal");
@@ -141,7 +181,7 @@ public class PlayerMove : MonoBehaviour
         bDown = Input.GetMouseButtonDown(1);
         dDown = Input.GetKeyDown(KeyCode.E);
     }
-
+    
     void Move()
     {
         Vector3 dir = new Vector3(hAxis, 0, vAxis).normalized;
@@ -171,37 +211,33 @@ public class PlayerMove : MonoBehaviour
 
         if(!isAttackReady || stern == true || isDie == true)
         {
-            dir = Vector3.zero;
+            //dir = Vector3.zero;
         }
 
         cc.Move(dir * playerMoveSpeed * (rDown ? 1.5f : 1f) * Time.deltaTime);
     }
-
+    [PunRPC]
     void Attack()
     {
         attackDelay += Time.deltaTime;
-        isAttackReady = weapon.rate < attackDelay;
-        if (aDown && isAttackReady && stern == false && isDie == false)
-        {
-            weapon.Use();
-            anim.SetTrigger("Attack");
-            attackDelay = 0;
-        }
-    }
+        //isAttackReady = weapon.rate < attackDelay;
 
+        weapon.Use();
+        anim.SetTrigger("Attack");
+        attackDelay = 0;
+    }
+    [PunRPC]
     void ThrowBomb()
     {
-        if (bDown && stern == false && isDie == false && bomb == false)
-        {
-            bomb = true;
-            bomb_CoolTime.enabled = true;
-            bomb_CoolTime.fillAmount = 1;
-            StartCoroutine(LightCoolTime());
-            GameObject instantBomb = Instantiate(grenadeObj, firePos.transform.position,
-                firePos.transform.rotation);
-            Rigidbody rigidBomb = instantBomb.GetComponent<Rigidbody>();
-            rigidBomb.AddForce(firePos.transform.forward * 13f, ForceMode.Impulse);
-        }        
+
+        bomb = true;
+        bomb_CoolTime.enabled = true;
+        bomb_CoolTime.fillAmount = 1;
+        StartCoroutine(LightCoolTime());
+        GameObject instantBomb = Instantiate(grenadeObj, firePos.transform.position,
+            firePos.transform.rotation);
+        Rigidbody rigidBomb = instantBomb.GetComponent<Rigidbody>();
+        rigidBomb.AddForce(firePos.transform.forward * 13f, ForceMode.Impulse);
     }
     IEnumerator LightCoolTime()
     {
@@ -214,32 +250,24 @@ public class PlayerMove : MonoBehaviour
         bomb = false;
         bomb_CoolTime.enabled = false;
     }
-
+    [PunRPC]
     void Die()
     {
-        if(curHealth <= 0)
-        {
-            isDie = true;
-            anim.SetBool("Die", true);
-            Destroy(this.gameObject, 3f);
-        }
+        isDie = true;
+        anim.SetBool("Die", true);
+        Destroy(this.gameObject, 3f);
     }
-
+    [PunRPC]
     void Defend()
     {
-        if (dDown && stern == false && isDie == false && shield == false)
-        {
-            //shieldCoolTime.enabled = true;
-            shieldCoolTime.SetActive(true);
-            shield = true;
-            shield_CoolTime.enabled = true;
-            shield_CoolTime.fillAmount = 1;
-            StartCoroutine(DefendCoolTime());
-            UseS();
-            scol.enabled = true;
-            anim.SetTrigger("Guard");
-            //StartCoroutine(DCoolTimeText());
-        }        
+        shieldCoolTime.SetActive(true);
+        shield = true;
+        shield_CoolTime.enabled = true;
+        shield_CoolTime.fillAmount = 1;
+        StartCoroutine(DefendCoolTime());
+        UseS();
+        scol.enabled = true;
+        anim.SetTrigger("Guard");      
     }
     IEnumerator DefendCoolTime()
     {
@@ -252,7 +280,7 @@ public class PlayerMove : MonoBehaviour
         shield = false;
         shield_CoolTime.enabled = false;        
     }
-
+    [PunRPC]
     void UseS()
     {
         StartCoroutine(ShieldTime());        
@@ -265,18 +293,4 @@ public class PlayerMove : MonoBehaviour
         effect.SetActive(false);
         scol.enabled = false;
     }
-    //IEnumerator DCoolTimeText()
-    //{
-    //    while (shieldTime > 0)
-    //    {
-    //        yield return new WaitForSeconds(1.0f);
-    //        shieldTime -= 1.0f;
-    //        //shieldCoolTime.text = "" + shieldTime;
-    //        shieldCoolTime.GetComponent<Text>().text = "" + shieldTime;
-    //    }
-
-    //    //shieldCoolTime.enabled = false;        
-    //    shieldCoolTime.SetActive(false);
-    //    yield break;
-    //}
 }

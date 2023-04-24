@@ -39,6 +39,14 @@ MonoBehaviour:
   - DestroySpaceship
   - Fire
   - RespawnSpaceship
+  - Attack
+  - Defend
+  - Die
+  - HandleHp
+  - OnCollisionEnter
+  - OnTriggerEnter
+  - ThrowBomb
+  - UseS
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

@@ -114,8 +114,14 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+-define:PHOTON_UNITY_NETWORKING
+-define:PUN_2_0_OR_NEWER
+-define:PUN_2_OR_NEWER
+-define:PUN_2_19_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
+-r:"Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll"
 -r:"F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"F:/AIAclassdata/Unity/Unity Editor/2021.3.19f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -329,6 +335,16 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/CFXREditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/CFXRRuntime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/KinoBloom.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonChat.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonRealtime.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonUnityNetworking.Demos.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonUnityNetworking.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonUnityNetworking.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonUnityNetworking.Utilities.Culling.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PhotonUnityNetworking.Utilities.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PunDemos.DemoHubEditor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/PunDemos.DemoSlotcarEditor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/ToonyColorsPro.Demo.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
@@ -356,6 +372,8 @@
 "Assets/03.Script/Bomb.cs"
 "Assets/03.Script/CamFollow.cs"
 "Assets/03.Script/CamRotate.cs"
+"Assets/03.Script/GameManager.cs"
+"Assets/03.Script/PhotonManager.cs"
 "Assets/03.Script/PlayerMove.cs"
 "Assets/03.Script/PlayerRotate.cs"
 "Assets/03.Script/Weapon.cs"
@@ -369,6 +387,20 @@
 "Assets/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_AutoRotate.cs"
 "Assets/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightFlicker.cs"
 "Assets/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightIntensityFade.cs"
+"Assets/Photon/PhotonChat/Demos/Common/EventSystemSpawner.cs"
+"Assets/Photon/PhotonChat/Demos/Common/OnStartDelete.cs"
+"Assets/Photon/PhotonChat/Demos/Common/TextButtonTransition.cs"
+"Assets/Photon/PhotonChat/Demos/Common/TextToggleIsOnTransition.cs"
+"Assets/Photon/PhotonChat/Demos/DemoChat/AppSettingsExtensions.cs"
+"Assets/Photon/PhotonChat/Demos/DemoChat/ChannelSelector.cs"
+"Assets/Photon/PhotonChat/Demos/DemoChat/ChatAppIdCheckerUI.cs"
+"Assets/Photon/PhotonChat/Demos/DemoChat/ChatGui.cs"
+"Assets/Photon/PhotonChat/Demos/DemoChat/FriendItem.cs"
+"Assets/Photon/PhotonChat/Demos/DemoChat/IgnoreUiRaycastWhenInactive.cs"
+"Assets/Photon/PhotonChat/Demos/DemoChat/NamePickGui.cs"
+"Assets/Photon/PhotonLibs/WebSocket/SocketWebTcp.cs"
+"Assets/Photon/PhotonLibs/WebSocket/WebSocket.cs"
+"Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 -langversion:9.0
 
 /deterministic
