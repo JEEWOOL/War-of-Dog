@@ -63,11 +63,14 @@ public class PlayerMove : MonoBehaviourPunCallbacks
     // 포톤 연동 변수
     public PhotonView pv;
     public float rotSpeed = 200;
-    float mx = 0;    
+    float mx = 0;
+    private Renderer[] renderers;
+    public GameObject pCam;
 
     private void Awake()
     {
         pv = GetComponent<PhotonView>();
+        renderers = GetComponentsInChildren<Renderer>();
 
         gameManager = GameObject.Find("GameManager");
         bomb_CoolTime = gameManager.GetComponent<GameManager>().bomb_CoolTime;
@@ -75,6 +78,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         shield_CoolTime = gameManager.GetComponent<GameManager>().shield_CoolTime;
         shieldCoolTime = gameManager.GetComponent<GameManager>().shieldCoolTime;
         hp_Slider = gameManager.GetComponent<GameManager>().hp_Slider;
+        pCam = gameManager.GetComponent<GameManager>().dBP;
 
         cc = gameObject.GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
@@ -85,9 +89,9 @@ public class PlayerMove : MonoBehaviourPunCallbacks
 
     private void Start()
     {
-        hp_Slider.value = (float)curHealth / (float)maxHealth;        
+        hp_Slider.value = (float)curHealth / (float)maxHealth;
         bombCoolTime.SetActive(false);
-        shieldCoolTime.SetActive(false);        
+        shieldCoolTime.SetActive(false);
         bomb_CoolTime.fillAmount = 1;
         bomb = false;
         bomb_CoolTime.enabled = false;
@@ -102,7 +106,6 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         if (pv.IsMine)
         {
             GetInput();
-
             Move();
 
             if (aDown && isAttackReady && stern == false && isDie == false && !isJumping)
@@ -126,9 +129,9 @@ public class PlayerMove : MonoBehaviourPunCallbacks
             {
                 Defend();
                 pv.RPC("Defend", RpcTarget.OthersBuffered, null);
-            }                        
+            }
             //pv.RPC("HandleHp", RpcTarget.OthersBuffered, null);
-        }       
+        }
     }
 
     private void LateUpdate()
@@ -145,13 +148,13 @@ public class PlayerMove : MonoBehaviourPunCallbacks
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Sword")
+        if (other.tag == "Sword")
         {
             curHealth -= 10f;
             anim.SetTrigger("damage");
         }
     }
-    
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Bomb" || collision.gameObject.tag == "Shield")
@@ -171,7 +174,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
     {
         hp_Slider.value = (float)curHealth / (float)maxHealth;
     }
-    
+
     void GetInput()
     {
         hAxis = Input.GetAxisRaw("Horizontal");
@@ -181,7 +184,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         bDown = Input.GetMouseButtonDown(1);
         dDown = Input.GetKeyDown(KeyCode.E);
     }
-    
+
     void Move()
     {
         Vector3 dir = new Vector3(hAxis, 0, vAxis).normalized;
@@ -209,7 +212,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         yVelocity += gravity * Time.deltaTime;
         dir.y = yVelocity;
 
-        if(!isAttackReady || stern == true || isDie == true)
+        if (!isAttackReady || stern == true || isDie == true)
         {
             //dir = Vector3.zero;
         }
@@ -220,8 +223,6 @@ public class PlayerMove : MonoBehaviourPunCallbacks
     void Attack()
     {
         attackDelay += Time.deltaTime;
-        //isAttackReady = weapon.rate < attackDelay;
-
         weapon.Use();
         anim.SetTrigger("Attack");
         attackDelay = 0;
@@ -241,7 +242,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
     }
     IEnumerator LightCoolTime()
     {
-        while(bomb_CoolTime.fillAmount > 0)
+        while (bomb_CoolTime.fillAmount > 0)
         {
             bomb_CoolTime.fillAmount -= 1 * Time.smoothDeltaTime / 3f;
             yield return null;
@@ -254,8 +255,36 @@ public class PlayerMove : MonoBehaviourPunCallbacks
     void Die()
     {
         isDie = true;
+        //anim.SetBool("Die", true);
+        //Destroy(this.gameObject, 3f);
+        StartCoroutine(PlayerDIe());
+    }
+    IEnumerator PlayerDIe()
+    {
+        cc.enabled = false;
         anim.SetBool("Die", true);
-        Destroy(this.gameObject, 3f);
+        pCam.SetActive(true);
+        yield return new WaitForSeconds(2.0f);
+        SetPlayerVisible(false);
+
+        Transform[] points = GameObject.Find("SpawnPointGroup").GetComponentsInChildren<Transform>();
+        int idx = Random.Range(1, points.Length);
+        transform.position = points[idx].position;
+
+        pCam.SetActive(false);
+        anim.SetBool("Die", false);
+        anim.SetTrigger("Recovery");
+        curHealth = 30;
+        SetPlayerVisible(true);
+        cc.enabled = true;
+        isDie = false;
+    }
+    void SetPlayerVisible(bool isVisible)
+    {
+        for (int i = 0; i < renderers.Length; i++)
+        {
+            renderers[i].enabled = isVisible;
+        }
     }
     [PunRPC]
     void Defend()
@@ -267,23 +296,23 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         StartCoroutine(DefendCoolTime());
         UseS();
         scol.enabled = true;
-        anim.SetTrigger("Guard");      
+        anim.SetTrigger("Guard");
     }
     IEnumerator DefendCoolTime()
     {
         while (shield_CoolTime.fillAmount > 0)
-        {            
+        {
             shield_CoolTime.fillAmount -= 1 * Time.smoothDeltaTime / 5f;
             yield return null;
-            shield = true;            
+            shield = true;
         }
         shield = false;
-        shield_CoolTime.enabled = false;        
+        shield_CoolTime.enabled = false;
     }
     [PunRPC]
     void UseS()
     {
-        StartCoroutine(ShieldTime());        
+        StartCoroutine(ShieldTime());
     }
     IEnumerator ShieldTime()
     {

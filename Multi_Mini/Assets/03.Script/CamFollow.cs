@@ -38,10 +38,4 @@ public class CamFollow : MonoBehaviour
 
         transform.eulerAngles = new Vector3(-my, mx, 0);
     }
-
-    void CamFriend()
-    {
-        transform.position = GameObject.Find("CamPosition").transform.position;
-        transform.rotation = GameObject.Find("CamPosition").transform.rotation;
-    }
 }

@@ -12,4 +12,5 @@ public class GameManager : MonoBehaviour
     public Image shield_CoolTime;
     public GameObject shieldCoolTime;
     public Slider hp_Slider;
+    public GameObject dBP;
 }

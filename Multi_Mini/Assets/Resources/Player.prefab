@@ -1930,6 +1930,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 1
     Name: Guard
+  - Type: 9
+    SynchronizeType: 0
+    Name: Recovery
   m_SynchronizeLayers:
   - SynchronizeType: 1
     LayerIndex: 0
@@ -1982,6 +1985,7 @@ MonoBehaviour:
   hp_Slider: {fileID: 0}
   pv: {fileID: 0}
   rotSpeed: 200
+  pCam: {fileID: 0}
 --- !u!114 &2052091840124781178
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,11 +19,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
-    PhotonUnityNetworking.Editor.dll:
-    - Photon.Pun.PhotonAnimatorViewEditor
-    - Photon.Pun.PhotonTransformViewEditor
-    - Photon.Pun.PhotonViewInspector
-    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -383,7 +378,7 @@ ScriptsOnlyBuild:
     className: TMP_StyleSheet
   - hash:
       serializedVersion: 2
-      Hash: 9672676a654c6ed4d24d1a0c57fdcdb1
+      Hash: 0480c50e455f709721b46f80c001d919
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -965,7 +960,7 @@ ScriptsOnlyBuild:
     className: VariablesSaver
   - hash:
       serializedVersion: 2
-      Hash: 02b53156942cf2b7e605aa3f6a8570b5
+      Hash: ccb73297469dc81da24d15631f9d1ef6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMove
@@ -2022,4 +2017,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/01.Scenes/Play.unity
-  playerPath: F:/AIAclassdata/Unity/Unity Project/Build_Mul/Multi_Mini.exe
+  playerPath: E:/AIAclassdata/Unity/Unity Project/Build_Mul/Multi_Mini.exe
