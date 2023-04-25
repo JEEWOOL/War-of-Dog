@@ -8,6 +8,7 @@ ScriptsOnlyBuild:
     - PhotonManager
     - PlayerMove
     - PlayerRotate
+    - RoomData
     - Weapon
     PhotonUnityNetworking.Demos.dll:
     - Photon.Pun.Demo.Asteroids.Asteroid
@@ -19,6 +20,8 @@ ScriptsOnlyBuild:
     - Photon.Pun.Demo.PunBasics.PlayerUI
     - Photon.Pun.Demo.SlotRacer.PlayerControl
     - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.Editor.dll:
+    - Photon.Pun.PunSceneSettings
     PhotonUnityNetworking.dll:
     - Photon.Pun.PhotonAnimatorView
     - Photon.Pun.PhotonRigidbodyView
@@ -42,9 +45,15 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
@@ -55,18 +64,33 @@ ScriptsOnlyBuild:
     - Photon.Pun.PhotonAnimatorView/SynchronizedLayer
     - Photon.Pun.PhotonAnimatorView/SynchronizedParameter
     UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.RectOffset
     UnityEngine.UI:
     - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.FontData
+    - UnityEngine.UI.InputField/EndEditEvent
+    - UnityEngine.UI.InputField/OnChangeEvent
+    - UnityEngine.UI.InputField/SubmitEvent
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
     - UnityEngine.UI.Navigation
+    - UnityEngine.UI.ScrollRect/ScrollRectEvent
+    - UnityEngine.UI.Scrollbar/ScrollEvent
     - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
-  methodsToPreserve: []
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: PhotonManager
+    methodName: OnMakeRoomClick
+  - assembly: Assembly-CSharp
+    fullTypeName: PhotonManager
+    methodName: OnLoginClick
   sceneClasses:
-    Assets/01.Scenes/Play.unity:
+    Assets/01.Scenes/Menu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -116,57 +140,65 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1792}
     - Class: 114
-      Script: {instanceID: 2212}
-    - Class: 114
       Script: {instanceID: 2658}
     - Class: 114
       Script: {instanceID: 2870}
     - Class: 114
-      Script: {instanceID: 3078}
+      Script: {instanceID: 2914}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3080}
     - Class: 114
-      Script: {instanceID: 3524}
+      Script: {instanceID: 3170}
     - Class: 114
-      Script: {instanceID: 3730}
+      Script: {instanceID: 3356}
     - Class: 114
-      Script: {instanceID: 3918}
+      Script: {instanceID: 3732}
     - Class: 114
       Script: {instanceID: 3920}
     - Class: 114
-      Script: {instanceID: 3968}
+      Script: {instanceID: 3922}
     - Class: 114
-      Script: {instanceID: 4084}
+      Script: {instanceID: 3970}
     - Class: 114
-      Script: {instanceID: 4154}
+      Script: {instanceID: 3974}
     - Class: 114
-      Script: {instanceID: 5032}
+      Script: {instanceID: 4086}
     - Class: 114
-      Script: {instanceID: 5092}
+      Script: {instanceID: 4156}
     - Class: 114
-      Script: {instanceID: 5134}
+      Script: {instanceID: 4870}
     - Class: 114
-      Script: {instanceID: 5154}
+      Script: {instanceID: 5094}
     - Class: 114
-      Script: {instanceID: 5558}
+      Script: {instanceID: 5136}
     - Class: 114
-      Script: {instanceID: 5600}
+      Script: {instanceID: 5156}
     - Class: 114
-      Script: {instanceID: 5790}
+      Script: {instanceID: 5560}
     - Class: 114
-      Script: {instanceID: 6254}
+      Script: {instanceID: 5602}
     - Class: 114
-      Script: {instanceID: 6262}
+      Script: {instanceID: 5792}
     - Class: 114
-      Script: {instanceID: 6852}
+      Script: {instanceID: 6256}
     - Class: 114
-      Script: {instanceID: 7366}
+      Script: {instanceID: 6264}
     - Class: 114
-      Script: {instanceID: 7720}
+      Script: {instanceID: 6266}
     - Class: 114
-      Script: {instanceID: 7846}
+      Script: {instanceID: 6854}
     - Class: 114
-      Script: {instanceID: 8140}
+      Script: {instanceID: 7368}
+    - Class: 114
+      Script: {instanceID: 7372}
+    - Class: 114
+      Script: {instanceID: 7722}
+    - Class: 114
+      Script: {instanceID: 7848}
+    - Class: 114
+      Script: {instanceID: 8142}
+    - Class: 114
+      Script: {instanceID: 274338}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -196,6 +228,75 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 225
+      Script: {instanceID: 0}
+    Assets/01.Scenes/Play.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1542}
+    - Class: 114
+      Script: {instanceID: 1544}
+    - Class: 114
+      Script: {instanceID: 2212}
+    - Class: 114
+      Script: {instanceID: 2658}
+    - Class: 114
+      Script: {instanceID: 2870}
+    - Class: 114
+      Script: {instanceID: 3526}
+    - Class: 114
+      Script: {instanceID: 5034}
+    - Class: 114
+      Script: {instanceID: 5094}
+    - Class: 114
+      Script: {instanceID: 5136}
+    - Class: 114
+      Script: {instanceID: 5792}
+    - Class: 114
+      Script: {instanceID: 6256}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 258
       Script: {instanceID: 0}
@@ -634,6 +735,12 @@ ScriptsOnlyBuild:
     assemblyName: PhotonUnityNetworking.Utilities.dll
     namespaceName: Photon.Pun.UtilityScripts
     className: OnClickInstantiate
+  - hash:
+      serializedVersion: 2
+      Hash: 180adcd496fa4ce63d1d29d5ad09c378
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TitleScene
   - hash:
       serializedVersion: 2
       Hash: 00e94708ac94b5a38c9f21b9f89467a6
@@ -1194,7 +1301,7 @@ ScriptsOnlyBuild:
     className: Line
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: bb328bce3884b097a471d15f10460a75
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PhotonManager
@@ -2014,7 +2121,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RoomData
   platform: 19
   scenePathNames:
+  - Assets/01.Scenes/Menu.unity
   - Assets/01.Scenes/Play.unity
-  playerPath: E:/AIAclassdata/Unity/Unity Project/Build_Mul/Multi_Mini.exe
+  playerPath: F:/AIAclassdata/Unity/Unity Project/Build_Mul/Multi_Mini.exe
