@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CamFollow : MonoBehaviour
 {
@@ -12,10 +13,9 @@ public class CamFollow : MonoBehaviour
     float my = 0;
 
     private void LateUpdate()
-    {        
+    {
         transform.position = GameObject.Find("CamPosition").transform.position;
-        transform.rotation = GameObject.Find("CamPosition").transform.rotation;
-        //CamFriend();
+        transform.rotation = GameObject.Find("CamPosition").transform.rotation;       
 
         if (Input.GetKeyDown(KeyCode.LeftBracket))
         {

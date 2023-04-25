@@ -64,8 +64,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
     public PhotonView pv;
     public float rotSpeed = 200;
     float mx = 0;
-    private Renderer[] renderers;
-    public GameObject pCam;
+    private Renderer[] renderers;    
 
     private void Awake()
     {
@@ -77,8 +76,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         bombCoolTime = gameManager.GetComponent<GameManager>().bombCoolTime;
         shield_CoolTime = gameManager.GetComponent<GameManager>().shield_CoolTime;
         shieldCoolTime = gameManager.GetComponent<GameManager>().shieldCoolTime;
-        hp_Slider = gameManager.GetComponent<GameManager>().hp_Slider;
-        pCam = gameManager.GetComponent<GameManager>().dBP;
+        hp_Slider = gameManager.GetComponent<GameManager>().hp_Slider;        
 
         cc = gameObject.GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
@@ -110,9 +108,9 @@ public class PlayerMove : MonoBehaviourPunCallbacks
 
             if (aDown && isAttackReady && stern == false && isDie == false && !isJumping)
             {
-                Attack();
+                Attack(pv.Owner.ActorNumber);
 
-                pv.RPC("Attack", RpcTarget.OthersBuffered, null);
+                pv.RPC("Attack", RpcTarget.OthersBuffered, pv.Owner.ActorNumber);                
             }
             if (curHealth <= 0)
             {
@@ -152,7 +150,25 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         {
             curHealth -= 10f;
             anim.SetTrigger("damage");
+            if(curHealth <= 0)
+            {
+                if (photonView.IsMine)
+                {
+                    var actorNo = other.GetComponent<Weapon>().actorNumber;
+                    Player lastAttack = PhotonNetwork.CurrentRoom.GetPlayer(actorNo);
+                    string msg = string.Format(
+                        "\n<color=#ff0000>{0}</color> 가 <color=#00ff00>{1}</color>를 처치",
+                        lastAttack.NickName, photonView.Owner.NickName);
+                    
+                    photonView.RPC("KillMessage", RpcTarget.AllBufferedViaServer, msg);
+                }
+            }            
         }
+    }
+    [PunRPC]
+    void KillMessage(string msg)
+    {
+        gameManager.GetComponent<GameManager>().msgList.text += msg;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -220,12 +236,13 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         cc.Move(dir * playerMoveSpeed * (rDown ? 1.5f : 1f) * Time.deltaTime);
     }
     [PunRPC]
-    void Attack()
+    void Attack(int actorNo)
     {
         attackDelay += Time.deltaTime;
         weapon.Use();
         anim.SetTrigger("Attack");
         attackDelay = 0;
+        weapon.GetComponent<Weapon>().actorNumber = actorNo;
     }
     [PunRPC]
     void ThrowBomb()
@@ -262,16 +279,14 @@ public class PlayerMove : MonoBehaviourPunCallbacks
     IEnumerator PlayerDIe()
     {
         cc.enabled = false;
-        anim.SetBool("Die", true);
-        pCam.SetActive(true);
+        anim.SetBool("Die", true);        
         yield return new WaitForSeconds(2.0f);
         SetPlayerVisible(false);
 
         Transform[] points = GameObject.Find("SpawnPointGroup").GetComponentsInChildren<Transform>();
         int idx = Random.Range(1, points.Length);
         transform.position = points[idx].position;
-
-        pCam.SetActive(false);
+        
         anim.SetBool("Die", false);
         anim.SetTrigger("Recovery");
         curHealth = 30;

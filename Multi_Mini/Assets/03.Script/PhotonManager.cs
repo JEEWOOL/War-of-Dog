@@ -168,7 +168,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                     // RoomInfo 프리팹을 scrollContent 하위에 생성
                     GameObject roomPrefab = Instantiate(roomItemPrefab, scrollContent);
                     // 룸 정보를 표시하기 위해 RoomInfo 정보 전달
-                    //roomPrefab.GetComponent<RoomData>().RoomInfo = roomInfo;
+                    roomPrefab.GetComponent<RoomData>().RoomInfo = roomInfo;
 
                     // 딕셔너리 자료형에 데이터 추가
                     rooms.Add(roomInfo.Name, roomPrefab);
@@ -176,7 +176,7 @@ public class PhotonManager : MonoBehaviourPunCallbacks
                 else
                 {
                     rooms.TryGetValue(roomInfo.Name, out tempRoom);
-                    //tempRoom.GetComponent<RoomData>().RoomInfo = roomInfo;
+                    tempRoom.GetComponent<RoomData>().RoomInfo = roomInfo;
                 }
             }
 

@@ -22,21 +22,21 @@ public class RoomData : MonoBehaviour
         {
             _roomInfo = value;
             // 룸 정보 표시
-            roomInfoText.text = $"{_roomInfo.Name} ({_roomInfo.PlayerCount} / " +
-                $"{_roomInfo.MaxPlayers})";
+            roomInfoText.text = $"{_roomInfo.Name} ({_roomInfo.PlayerCount} / {_roomInfo.MaxPlayers})";
             // 버튼 클릭 이벤트에 함수 연결
-            GetComponent<Button>().onClick.AddListener(() => OnEnterRoom(_roomInfo.Name));
+            GetComponent<Button>().onClick.AddListener(() => OnEnterRoom(_roomInfo.Name));            
         }
     }
 
     private void Awake()
-    {
+    {        
         roomInfoText = GetComponentInChildren<Text>();
         photonManager = GameObject.Find("PhotonManager").GetComponent<PhotonManager>();
     }
 
     void OnEnterRoom(string roomName)
     {
+        Debug.Log("야 들어온다!!!");
         // 유저명 설정
         photonManager.SetUserId();
 

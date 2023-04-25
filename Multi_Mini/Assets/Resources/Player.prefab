@@ -1713,6 +1713,7 @@ MonoBehaviour:
   damage: 10
   rate: 1
   meleeArea: {fileID: 5966583292583003864}
+  actorNumber: 0
 --- !u!1 &6137456625612580739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,7 +1986,6 @@ MonoBehaviour:
   hp_Slider: {fileID: 0}
   pv: {fileID: 0}
   rotSpeed: 200
-  pCam: {fileID: 0}
 --- !u!114 &2052091840124781178
 MonoBehaviour:
   m_ObjectHideFlags: 0

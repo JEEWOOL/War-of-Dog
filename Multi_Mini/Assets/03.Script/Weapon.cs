@@ -14,6 +14,8 @@ public class Weapon : MonoBehaviour
     public float rate;
     public BoxCollider meleeArea;
 
+    public int actorNumber;
+
     public void Use()
     {
         if(type == Type.Melee)
