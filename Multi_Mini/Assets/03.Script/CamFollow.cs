@@ -15,7 +15,7 @@ public class CamFollow : MonoBehaviour
     private void LateUpdate()
     {
         transform.position = GameObject.Find("CamPosition").transform.position;
-        transform.rotation = GameObject.Find("CamPosition").transform.rotation;       
+        transform.rotation = GameObject.Find("CamPosition").transform.rotation;
 
         if (Input.GetKeyDown(KeyCode.LeftBracket))
         {

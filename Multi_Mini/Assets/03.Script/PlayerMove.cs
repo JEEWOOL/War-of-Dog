@@ -8,6 +8,13 @@ using UnityEngine.UI;
 
 public class PlayerMove : MonoBehaviourPunCallbacks
 {
+    public AudioSource atAudio;
+    public AudioSource dfAudio;
+    public AudioSource jumpAudio;
+    public AudioSource moveAudio;
+
+    bool isMoveS = false;
+
     // 플레이어 이동 / 체력
     public float playerMoveSpeed = 5;
     float hAxis;
@@ -64,7 +71,9 @@ public class PlayerMove : MonoBehaviourPunCallbacks
     public PhotonView pv;
     public float rotSpeed = 200;
     float mx = 0;
-    private Renderer[] renderers;    
+    private Renderer[] renderers;
+
+    bool isCursor = false;
 
     private void Awake()
     {
@@ -76,7 +85,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         bombCoolTime = gameManager.GetComponent<GameManager>().bombCoolTime;
         shield_CoolTime = gameManager.GetComponent<GameManager>().shield_CoolTime;
         shieldCoolTime = gameManager.GetComponent<GameManager>().shieldCoolTime;
-        hp_Slider = gameManager.GetComponent<GameManager>().hp_Slider;        
+        hp_Slider = gameManager.GetComponent<GameManager>().hp_Slider;
 
         cc = gameObject.GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
@@ -87,6 +96,8 @@ public class PlayerMove : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        Cursor.visible = false;
+
         hp_Slider.value = (float)curHealth / (float)maxHealth;
         bombCoolTime.SetActive(false);
         shieldCoolTime.SetActive(false);
@@ -110,7 +121,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
             {
                 Attack(pv.Owner.ActorNumber);
 
-                pv.RPC("Attack", RpcTarget.OthersBuffered, pv.Owner.ActorNumber);                
+                pv.RPC("Attack", RpcTarget.OthersBuffered, pv.Owner.ActorNumber);
             }
             if (curHealth <= 0)
             {
@@ -128,7 +139,19 @@ public class PlayerMove : MonoBehaviourPunCallbacks
                 Defend();
                 pv.RPC("Defend", RpcTarget.OthersBuffered, null);
             }
-            //pv.RPC("HandleHp", RpcTarget.OthersBuffered, null);
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(isCursor == false)
+            {
+                isCursor = true;
+                Cursor.visible = true;
+            }
+            else
+            {
+                isCursor = false;
+                Cursor.visible = false;
+            }
         }
     }
 
@@ -150,7 +173,7 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         {
             curHealth -= 10f;
             anim.SetTrigger("damage");
-            if(curHealth <= 0)
+            if (curHealth <= 0)
             {
                 if (photonView.IsMine)
                 {
@@ -159,10 +182,10 @@ public class PlayerMove : MonoBehaviourPunCallbacks
                     string msg = string.Format(
                         "\n<color=#ff0000>{0}</color> 가 <color=#00ff00>{1}</color>를 처치",
                         lastAttack.NickName, photonView.Owner.NickName);
-                    
+
                     photonView.RPC("KillMessage", RpcTarget.AllBufferedViaServer, msg);
                 }
-            }            
+            }
         }
     }
     [PunRPC]
@@ -173,8 +196,13 @@ public class PlayerMove : MonoBehaviourPunCallbacks
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Bomb" || collision.gameObject.tag == "Shield")
+        if (collision.gameObject.tag == "Bomb")
         {
+            StartCoroutine(BombAttack());
+        }
+        if (collision.gameObject.tag == "Shield")
+        {
+            dfAudio.Play();
             StartCoroutine(BombAttack());
         }
     }
@@ -210,6 +238,17 @@ public class PlayerMove : MonoBehaviourPunCallbacks
 
         dir = Camera.main.transform.TransformDirection(dir);
 
+        if(dir == Vector3.zero)
+        {
+            isMoveS = true;
+            if (isMoveS == true)
+            {
+                moveAudio.Play();
+            }
+            isMoveS = false;
+        }
+        
+
         if (cc.collisionFlags == CollisionFlags.Below)
         {
             if (isJumping)
@@ -223,17 +262,18 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         {
             yVelocity = jumpPower;
             isJumping = true;
+            jumpAudio.Play();
         }
 
         yVelocity += gravity * Time.deltaTime;
         dir.y = yVelocity;
 
-        if (!isAttackReady || stern == true || isDie == true)
+        if (stern == true || isDie == true)
         {
-            //dir = Vector3.zero;
+            dir = Vector3.zero;
         }
 
-        cc.Move(dir * playerMoveSpeed * (rDown ? 1.5f : 1f) * Time.deltaTime);
+        cc.Move(dir * playerMoveSpeed * (rDown ? 1.5f : 1f) * Time.deltaTime);        
     }
     [PunRPC]
     void Attack(int actorNo)
@@ -243,15 +283,19 @@ public class PlayerMove : MonoBehaviourPunCallbacks
         anim.SetTrigger("Attack");
         attackDelay = 0;
         weapon.GetComponent<Weapon>().actorNumber = actorNo;
+        atAudio.Play();
     }
     [PunRPC]
     void ThrowBomb()
     {
+        if (pv.IsMine)
+        {
+            bomb = true;
+            bomb_CoolTime.enabled = true;
+            bomb_CoolTime.fillAmount = 1;
+            StartCoroutine(LightCoolTime());
+        }        
 
-        bomb = true;
-        bomb_CoolTime.enabled = true;
-        bomb_CoolTime.fillAmount = 1;
-        StartCoroutine(LightCoolTime());
         GameObject instantBomb = Instantiate(grenadeObj, firePos.transform.position,
             firePos.transform.rotation);
         Rigidbody rigidBomb = instantBomb.GetComponent<Rigidbody>();
@@ -279,17 +323,18 @@ public class PlayerMove : MonoBehaviourPunCallbacks
     IEnumerator PlayerDIe()
     {
         cc.enabled = false;
-        anim.SetBool("Die", true);        
+        anim.SetBool("Die", true);
+        curHealth = 30;
+
         yield return new WaitForSeconds(2.0f);
         SetPlayerVisible(false);
 
         Transform[] points = GameObject.Find("SpawnPointGroup").GetComponentsInChildren<Transform>();
         int idx = Random.Range(1, points.Length);
         transform.position = points[idx].position;
-        
+
         anim.SetBool("Die", false);
         anim.SetTrigger("Recovery");
-        curHealth = 30;
         SetPlayerVisible(true);
         cc.enabled = true;
         isDie = false;
@@ -304,11 +349,15 @@ public class PlayerMove : MonoBehaviourPunCallbacks
     [PunRPC]
     void Defend()
     {
-        shieldCoolTime.SetActive(true);
-        shield = true;
-        shield_CoolTime.enabled = true;
-        shield_CoolTime.fillAmount = 1;
-        StartCoroutine(DefendCoolTime());
+        if (pv.IsMine)
+        {
+            shieldCoolTime.SetActive(true);
+            shield = true;
+            shield_CoolTime.enabled = true;
+            shield_CoolTime.fillAmount = 1;
+            StartCoroutine(DefendCoolTime());
+        }
+
         UseS();
         scol.enabled = true;
         anim.SetTrigger("Guard");

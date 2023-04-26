@@ -352,7 +352,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 11111
+  m_Text: 
 --- !u!1001 &5352371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14559,7 +14559,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 80}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 1, y: 0}
 --- !u!1001 &355489129
 PrefabInstance:
@@ -21850,8 +21850,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 316.41, y: 143.54007}
-  m_SizeDelta: {x: -632.82, y: -402.8901}
+  m_AnchoredPosition: {x: 292.19, y: 143.54007}
+  m_SizeDelta: {x: -584.38, y: -402.8901}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &491730829
 MonoBehaviour:
@@ -31399,8 +31399,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -130, y: 30}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: -100, y: 30}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &729870830
 MonoBehaviour:
@@ -44016,7 +44016,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 80, y: 80}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &991296411
 CanvasRenderer:
@@ -49911,7 +49911,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -30, y: 30}
-  m_SizeDelta: {x: 80, y: 80}
+  m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1128333077
 MonoBehaviour:
@@ -65926,7 +65926,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -5, y: -5}
-  m_SizeDelta: {x: 162.1845, y: 52.9862}
+  m_SizeDelta: {x: 210.617, y: 52.9862}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1499367913
 MonoBehaviour:
@@ -68073,8 +68073,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c3c7ad65ca8fe754fb4b1cd2c4b7be17, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -68109,8 +68109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37.9, y: -0.30381966}
-  m_SizeDelta: {x: 80, y: 43.594}
+  m_AnchoredPosition: {x: 47.8348, y: -0.30381966}
+  m_SizeDelta: {x: 99.8697, y: 43.594}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1559903232
 PrefabInstance:
