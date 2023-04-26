@@ -377,6 +377,7 @@
 "Assets/03.Script/PlayerMove.cs"
 "Assets/03.Script/PlayerRotate.cs"
 "Assets/03.Script/RoomData.cs"
+"Assets/03.Script/TitlePolder/ClickSoundManager.cs"
 "Assets/03.Script/TitlePolder/TitleScene.cs"
 "Assets/03.Script/Weapon.cs"
 "Assets/JMO Assets/Cartoon FX (legacy)/Demo/Assets/CFX_AutoStopLoopedEffect.cs"
